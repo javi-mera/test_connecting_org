@@ -1,0 +1,41 @@
+<template>
+  <!-- data table -->
+  <div class={outsideClasses}>
+    <template if:true={showTitle}>
+      <div class="slds-p-bottom_small">
+        Enter the values for the <strong>{phaseDescription}</strong>:
+      </div>
+    </template>
+    <template if:false={showTitle}>
+      <div class="slds-p-bottom_small">
+        <strong class="slds-text-heading_medium"
+          >Financial Success Criteria</strong
+        >
+      </div>
+    </template>
+    <div class={borderTableClasses} style="border-radius: 0.3rem 0.3rem 0 0">
+      <div
+        if:true={showPasteButton}
+        class="slds-card slds-grid slds-grid_align-end"
+        style="border-bottom: unset; border-radius: 0.25rem 0.25rem 0 0"
+      >
+        <lightning-button
+          label="Paste"
+          onclick={pasteData}
+          variant="brand"
+          icon-name="utility:paste"
+        ></lightning-button>
+      </div>
+      <lightning-datatable
+        class="deliverablesTable"
+        key-field="id"
+        data={data}
+        columns={columns}
+        oncellchange={onCellChangeHandle}
+        hide-checkbox-column
+        suppress-bottom-bar
+      >
+      </lightning-datatable>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <div>
+        <label class="slds-form-element__label"
+               for="input">{label}</label>
+        <div class="help-text">
+            <c-custom-help-text onhidehelptext={handleHideHelpText}
+                                helptext={infotext}>
+            </c-custom-help-text>
+        </div>
+        <lightning-input-rich-text value={richText}
+                                   formats={formats}
+                                   onchange={handleTextChange}
+                                   variant="label-hidden"
+                                   id="input">
+        </lightning-input-rich-text>
+        
+    </div>
+    
+</template>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Generation Geo Hierarchy</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="projectId" type="String"/>
+            <property name="noChangesNeededForPromotionalPack" type="Boolean"/>
+            <property name="selectedRegions" type="String[]"/>
+            <property name="selectedDistributionChannels" type="String[]" />
+            <property name="selectionTradeType" type="String[]" />
+            <property name="selectionBrandHome" type="String[]" />
+            <property name="tradeType" type="String" />
+            <property name="selectionHubs" type="String[]" />
+            <property name="selectionClusters" type="String[]" />
+            <property name="selectionCity" type="String[]" />
+            <property name="selectionMarket" type="String[]"></property>
+            <property name="initialSelectionLeadRegion" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionHub" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionCluster" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionCity" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionDistributionChannel" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionTradeType" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionBrandHome" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionMarket" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionAdditionalRegion" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionAdditionalMarket" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionAdditionalCluster" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionAdditionalHub" type="apex://LookupSearchResult[]"/>
+            <property name="showAdditional" type="Boolean" />
+            <property name="selectionAdditionalRegions" type="String[]" />
+            <property name="selectionAdditionalHubs" type="String[]" />
+            <property name="selectionAdditionalClusters" type="String[]" />
+            <property name="selectionAdditionalMarkets" type="String[]" />
+            <property name="currentPhase" type="String" />
+            <property name="projectClassification" type="String" />
+            <property name="disableLeadMarket" type="Boolean" />
+            <property name="leadRegionAlignedToProject" type="Boolean"/>
+            <property name="isAdmin" label="Is Admin?" type="Boolean"/>
+            <property name="isBMC" label="Is BMC? DEPRECATED" type="Boolean"/>
+            <property name="bmcClassification" label="BMC Classification" type="String"/>
+            <property name="marketClassification" label="Market Classification" type="String"/>
+            <property name="bmcCalculated" label="BMC Calculated" type="Boolean"/>
+            <property name="projectPriorityJustification" label="Project Priority Justification" type="String"/>
+            <property name="areChangesNeededForPromotionalPack" type="Boolean" description="Deprecated"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

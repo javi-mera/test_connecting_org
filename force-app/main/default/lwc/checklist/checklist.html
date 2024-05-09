@@ -1,0 +1,129 @@
+<template>
+    <template lwc:if={isPromoPackDefineOrLow}>
+        <lightning-formatted-rich-text if:true={isMediumComplexity}
+                                       value={mediumPromoPackBCAIntro}></lightning-formatted-rich-text>
+        <lightning-formatted-rich-text if:true={isLowPromoPackDefine}
+                                       value={lowPromoPackBCAIntro}></lightning-formatted-rich-text>
+        <lightning-formatted-rich-text if:true={isLowPromoPackNotDefine}
+                                       value={lowPromoPackProductionIntro}></lightning-formatted-rich-text>
+
+        <ul class="slds-list_dotted slds-m-top_x-small">
+            <li class="slds-m-bottom_x-small">
+                <p>{packDevManagerPoint}</p>
+                <lightning-formatted-rich-text value={innovationSupplyCommunityLink}></lightning-formatted-rich-text>
+            </li>
+            <li class="slds-m-bottom_x-small">
+                <p>{legalRegulatoryApprovalsPoint}</p>
+                <lightning-formatted-rich-text value={legalAndRegsPrimosLink}></lightning-formatted-rich-text>
+            </li>
+            <li if:false={isPromoPackNeckTag} class="slds-m-bottom_x-small">{giftBoxPoint}
+            </li>
+        </ul>
+
+        <div lwc:if={isLowComplexity} class="slds-m-bottom_medium">
+            <div class="slds-form-element">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-20 no-flex">
+                        <lightning-input type="checkbox"
+                                         label=''
+                                         variant="label-hidden"
+                                         id="PLConfirmation"
+                                         onchange={handleInputOnChange}
+                                         checked={hasPLConfirmedChecklist}
+                                         disabled={isRecordPageOrNotDefinePhase}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_19-of-20">
+                        <label class="slds-form-element__label no-padding" for="PLConfirmation">
+                            {lowPromoPackConfirmation}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+    <template lwc:if={isMediumPromoPackNotDefine}>
+        <div class={introTextStyle}>
+            <p if:false={isNotDesignPhase}>{mediumPromoPackBCVIntro}</p>
+            <p if:true={isNotDesignPhase}><b>{mediumPromoPackProductionIntro}</b></p>
+        </div>
+
+        <div class="slds-m-bottom_medium">
+            <div class="slds-form-element">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-20 no-flex">
+                        <lightning-input type="checkbox"
+                                         label=''
+                                         variant="label-hidden"
+                                         onchange={handleInputOnChange}
+                                         id="isPackDevManagerContacted"
+                                         checked={isPackDevelopmentManagerContacted}
+                                         disabled={isRecordPageOrNotDesignPhase}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_19-of-20">
+                        <label class="slds-form-element__label no-padding" for="isPackDevManagerContacted">
+                            {packDevManagerConfirmation}
+                            <lightning-formatted-rich-text
+                                    value={innovationSupplyCommunityLink}></lightning-formatted-rich-text>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-m-bottom_medium">
+            <div class="slds-form-element">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-20 no-flex">
+                        <lightning-input type="checkbox"
+                                         label=''
+                                         variant="label-hidden"
+                                         onchange={handleInputOnChange}
+                                         id="isApprovedByLegalRegPrimos"
+                                         checked={isApprovedByLegalAndRegPrimos}
+                                         disabled={isRecordPageOrNotDesignPhase}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_19-of-20">
+                        <label class="slds-form-element__label no-padding" for="isApprovedByLegalRegPrimos">
+                            <lightning-formatted-rich-text
+                                    value={legalRegulatoryApprovalsConfirmation}></lightning-formatted-rich-text>
+                            <lightning-formatted-rich-text
+                                    value={legalAndRegsPrimosLink}></lightning-formatted-rich-text>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-m-bottom_small">{giftBoxPoint}</div>
+        <div class="slds-m-bottom_medium">
+            <div class="slds-form-element">
+                <div class="slds-grid slds-m-bottom_small">
+                    <div class="slds-col slds-size_1-of-20 no-flex">
+                        <lightning-input type="checkbox"
+                                         label=''
+                                         variant="label-hidden"
+                                         onchange={handleInputOnChange}
+                                         id="isGiftBoxException"
+                                         checked={isGiftBoxException}
+                                         disabled={isRecordPageOrNotDesignPhase}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_19-of-20">
+                        <label class="slds-form-element__label no-padding"
+                               for="isGiftBoxException">{giftBoxException}</label>
+                    </div>
+                </div>
+                <lightning-textarea if:true={isGiftBoxException}
+                                    label=''
+                                    variant="label-hidden"
+                                    value={giftBoxExceptionComment}
+                                    onchange={handleInputOnChange}
+                                    id="giftBoxExceptionComment"
+                                    disabled={isRecordPageOrNotDesignPhase}>
+                </lightning-textarea>
+            </div>
+        </div>
+    </template>
+</template>

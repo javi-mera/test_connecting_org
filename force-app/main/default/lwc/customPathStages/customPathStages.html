@@ -1,0 +1,61 @@
+<template>
+  <lightning-progress-indicator current-step={current} type="path">
+    <lightning-progress-step
+      if:true={isOverviewVisible}
+      label="Overview"
+      value="1"
+      data-id="1"
+      onclick={onclickOverview}
+    ></lightning-progress-step>
+    <lightning-progress-step
+      if:true={isProductisible}
+      label="Product"
+      value="2"
+      data-id="2"
+      onclick={onclickProduct}
+    ></lightning-progress-step>
+    <lightning-progress-step
+      if:true={isGeographyVisible}
+      label="Geography"
+      value="3"
+      data-id="3"
+      onclick={onclickGeography}
+    ></lightning-progress-step>
+    <lightning-progress-step
+      if:true={isFinancialsVisible}
+      label="Financials"
+      value="6"
+      data-id="6"
+      onclick={onclickFinancials}
+    ></lightning-progress-step>
+    <lightning-progress-step
+            if:true={isTimingsVisible}
+            label="Timings"
+            value="8"
+            data-id="8"
+            onclick={onclickTimings}
+    ></lightning-progress-step>
+    <lightning-progress-step
+      if:true={isAttachmentsVisible}
+      label="Attachments"
+      value="4"
+      data-id="4"
+      onclick={onclickAttachments}
+    ></lightning-progress-step>
+    <!-- <lightning-progress-step if:true={isTaskListVisible} label="Tasks List" value="5" data-id="5"></lightning-progress-step> -->
+    <lightning-progress-step
+            if:true={isChecklistVisible}
+            label="Checklist"
+            value="9"
+            data-id="9"
+            onclick={onclickChecklist}
+    ></lightning-progress-step>
+    <lightning-progress-step
+      if:true={isResourceMgtVisible}
+      label="Resource Mgt"
+      value="7"
+      data-id="7"
+      onclick={onclickResourceMgt}
+    ></lightning-progress-step>
+  </lightning-progress-indicator>
+</template>

@@ -1,0 +1,6 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <div class="slds-box slds-theme_default" style="margin-right: 20%; margin-left:20%; background-color:white; background: white;">
+      <lightning:flow aura:id="flowData" />
+    </div>
+</aura:component>

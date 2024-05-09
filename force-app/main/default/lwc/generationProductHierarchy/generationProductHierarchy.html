@@ -1,0 +1,78 @@
+<template>
+               
+        <div class="slds-p-top_medium"> 
+            <c-lookup 
+                selection={initialSelectionCategory}
+                onsearchcategory={handleSearchCategory}
+                onsearchallcategories={handleSearchAllCategories}
+                onremovecategory={handleCategoryRemoved}
+                ongetlookup={handlePublishEvent}
+                label="Category"
+                placeholder="Search"
+                required="true"
+                class="slds-p-top_medium"
+                infotext="Select the category for this project or select new category"
+            >
+            </c-lookup> 
+        </div>
+
+        <div class="slds-p-top_medium">
+            <c-lookup 
+                selection={initialSelectionBrand}
+                onsearchbrand={handleSearchBrand}
+                onsearchallbrands={handleSearchAllBrands}
+                onremovebrand={handleBrandRemoved}
+                ongetlookup={handlePublishEvent}
+                label="Brand"
+                placeholder="Search"
+                required="true"
+                class="slds-p-top_medium"
+                infotext="Select the brand for this project or select new brand"
+            >
+            </c-lookup>
+        </div>
+
+        <div class="slds-p-top_medium">
+            <c-lookup 
+                selection={initialSelectionSubBrand}
+                onsearchsubbrand={handleSearchSubBrand}
+                onsearchallsubbrands={handleSearchAllSubBrands}
+                onremovesubrand={handleRemoveSubBrand}
+                ongetlookup={handlePublishEvent}
+                label="Sub Brand"
+                placeholder="Search"
+                required="true"
+                class="slds-p-top_medium"
+                infotext="Select the sub brand for this project or select new sub brand"
+            >
+            </c-lookup>
+        </div>
+        <div class="slds-p-top_medium">
+            <c-lookup if:true={showSizesAndFlavours}
+                selection={initialSelectionFlavour}
+                onsearchflavour={handleSearchFlavour}
+                onsearchallflavours={handleSearchAllFlavours}
+                onremoveflavour={handleRemoveFlavour}
+                ongetlookup={handlePublishEvent}
+                label="Flavour"
+                required="true"
+                placeholder="Search"
+                infotext="Select from the flavour or select new. This can be updated later in the project, when you have confirmed details."
+            >
+            </c-lookup>
+        </div>
+        <div class="slds-p-top_medium slds-p-bottom_medium">
+            <c-lookup if:true={showSizesAndFlavours}
+                selection={initialSelectionSize}
+                onsearchsize={handleSearchSize}
+                onsearchallsizes={handleSearchAllSizes}
+                ongetlookup={handlePublishEvent}
+                label="Size"
+                required="true"
+                placeholder="Search"
+                infotext="Select from the size or select new. This can be updated later in the project, when you have confirmed details."
+            >
+            </c-lookup> 
+        </div>
+   
+</template>

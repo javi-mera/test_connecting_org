@@ -1,0 +1,85 @@
+<template>
+    <lightning-modal-header label="Delegate OOO Approval"></lightning-modal-header>
+    <lightning-modal-body class="innovator-delegate-ooo-approval">
+        <lightning-input
+            if:false={delegateFutureOnly}
+            class="slds-var-m-vertical_small"
+            type="checkbox"
+            label="Delegate future approvals submitted whilst you are out of the office"
+            onchange={handleDelegateFutureApprovalsCheckbox}
+        ></lightning-input>
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="horizontal-small">
+                <c-lookup-to-delegate
+                    data-approver="future"
+                    data-mass-delegate
+                ></c-lookup-to-delegate>
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="horizontal-small">
+                <lightning-layout>
+                    <lightning-layout-item size="6" padding="horizontal-small">
+                        <lightning-input min={minimumDate} value={start} label="Start" type="date" onchange={onInputDateChange} data-field="start"></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6" padding="horizontal-small">
+                        <lightning-input min={minimumDate} value={end} label="End" type="date" onchange={onInputDateChange} data-field="end"></lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+        </lightning-layout>
+        <template if:false={delegateFutureOnly}>
+            <lightning-input
+                if:true={hasPendingApprovals}
+                class="slds-var-m-vertical_small"
+                type="checkbox"
+                label="Delegate existing pending approvals whilst you are out of the office"
+                onchange={handleDelegateExisitingPendingApprovalsCheckbox}
+            ></lightning-input>
+            <div if:true={delegateExisitingPendingApprovals}>
+                <lightning-input
+                    class="slds-var-m-vertical_small"
+                    type="checkbox"
+                    disabled={disableReassignAllProjects}
+                    label="Please reassign all of my existing pending approvals to be above Primo whilst I am out of office"
+                    onchange={handleReassignAllProjectsCheckbox}
+                ></lightning-input>
+                <lightning-input
+                    class="slds-var-m-vertical_small"
+                    type="checkbox"
+                    disabled={reassignAllProjects}
+                    label="Please reassign some of my pending approvals from the list below, to the above Primo whilst I am out of office"
+                    onchange={handleReassignSomeProjectsCheckbox}
+                ></lightning-input>
+                <template if:true={reassignSomeProjects}>
+                    <c-lookup-to-delegate
+                        data-approver="existing"
+                        class="slds-var-m-vertical_small slds-grid"
+                        data-mass-delegate
+                    ></c-lookup-to-delegate>
+                    <lightning-datatable
+                        class="slds-var-m-vertical_small"
+                        columns={_columns}
+                        data={_data}
+                        show-row-number-column
+                        key-field="id"
+                        onrowselection={onRowSelectionHandle}
+                    ></lightning-datatable>
+                </template>
+            </div>
+        </template>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <div class="slds-grid slds-grid_align-center" style="gap: 1rem;">
+            <lightning-button
+                variant="brand"
+                label="Close"
+                onclick={handleClose}
+            ></lightning-button>
+        <lightning-button
+            disabled={disableDelegate}
+            variant="brand"
+            label="Delegate"
+            onclick={handleDelegate}
+        ></lightning-button>
+        </div>
+    </lightning-modal-footer>
+</template>

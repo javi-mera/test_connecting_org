@@ -1,0 +1,213 @@
+<template>
+    <c-lookup selection={initialSelectionMarket}
+              onsearchleadmarket={handleSearchLeadMarket}
+              onsearchallleadmarkets={handleSearchAllMarkets}
+              ongetlookup={handlePublishEvent}
+              onselectionchange={handleLeadMarketChange}
+              onremoveleadmarket={handleAdditionalMarketChange}
+              data-field="Lead Market"
+              label="Lead Market"
+              placeholder="Search"
+              required="true"
+              infotext={leadMarketHelpText}
+    ></c-lookup>
+
+    <!--        onremoveregion={handleRemoveRegions}-->
+<!--    onsearchregion={handleSearchLeadRegion}
+        onsearchallregions={handleSearchAllRegions}
+        onregionchange={handleLeadRegionChange}-->
+    <c-lookup 
+        selection={initialSelectionLeadRegion}
+        ongetlookup={handlePublishEvent}
+        label="Lead Region"
+        placeholder="Search"
+        required="true"
+        infotext={leadRegionHelpText}
+    ></c-lookup>
+
+<!--    onsearchhub={handleSearchHub}
+        onsearchallhubs={handleSearchAllHubs}
+        onremovehubdependencies={handleRemoveHubs}-->
+    <c-lookup 
+        selection={initialSelectionHub}
+        ongetlookup={handlePublishEvent}
+        label="Lead Hub"
+        placeholder="Search"
+        required="true"
+        infotext={leadHubHelpText}
+    ></c-lookup>
+
+<!--    onsearchcluster={handleSearchCluster}
+        onsearchallclusters={handleSearchAllClusters}
+        onremovecluster={handleRemoveLeadCluster}-->
+    <c-lookup 
+        selection={initialSelectionCluster}
+        ongetlookup={handlePublishEvent}
+        label="Lead Cluster"
+        placeholder="Search" 
+        required="true"
+        infotext={leadClusterHelpText}
+    ></c-lookup>
+    
+    <c-lookup 
+        selection={initialSelectionDistributionChannel}
+        onsearchdistributionchannel={handleSearchDistributionChannel}
+        onsearchalldistributionchannels={handleSearchAllDistributionChannel}
+        ongetlookup={handlePublishEvent}
+        label="Distribution Channel(s)"
+        placeholder="Search" 
+        required="true"
+        infotext="Select Distribution Channel (Domestic or Travel Retail)"
+    ></c-lookup>
+    <c-lookup
+        selection={initialSelectionTradeType}
+        onsearchtradetype={handleSearchTradeType}
+        onsearchalltradetype={handleSearchAllTradeTypes}
+        ongetlookup={handlePublishEvent}
+        onselectionchange={handleTradeTypeChange}
+        onremovetradetype={handleTradeTypeChange}
+        label="Trade Type(s)"
+        data-field="Trade Type"
+        placeholder="Search"
+        required="true"
+        infotext="Select Trade type (Brand Home / Off Trade / On Trade / E-Commerce or other)"
+    ></c-lookup>
+    <c-lookup
+        if:true={isBrandHome}
+        selection={initialSelectionBrandHome}
+        onsearchbrandhome={handleSearchBrandHome}
+        onsearchallbrandhome={handleSearchAllBrandHomes}
+        ongetlookup={handlePublishEvent}
+        label="Brand Home"
+        data-field="Brand Home"
+        placeholder="Search"
+        infotext="Select Brand Home"
+    ></c-lookup>
+    <div style="display: block;" if:true={isAdmin}>
+        <lightning-combobox
+            name="BMC Classification"
+            label="BMC Classification"
+            value={bmcClassification}
+            options={_bmcOptions}
+            onchange={handleClassificationChange}
+            data-field="bmcClassification"
+            disabled={disableBMC}
+        ></lightning-combobox>
+        <lightning-combobox
+            name="Market Classification"
+            label="Market Classification"
+            value={marketClassification}
+            options={_marketOptions}
+            onchange={handleClassificationChange}
+            data-field="marketClassification"
+            disabled={disableBMC}
+        ></lightning-combobox>
+    </div>
+    <div style="display: block;" if:false={isAdmin}>
+        <p class="slds-p-vertical_x-small">BMC Classification: {bmcClassification}</p>
+        <p class="slds-p-vertical_x-small">Market Classification: {marketClassificationFormula}</p>
+    </div>
+    <div style="display: block;" if:true={showProjectPriorityJustification}>
+        <lightning-textarea
+            value={projectPriorityJustification}
+            onchange={handleProjectPriorityJustificationChange}
+            label="If Pebble, Sand or Air, please enter your recommendation to approvers as to why the project should progress"
+        >
+        </lightning-textarea>
+    </div>
+    <template if:true={disableLeadRegionAlignedToProject}>
+        <div style="display: block;">
+            <lightning-input
+                class="slds-p-vertical_small"
+                type="checkbox"
+                checked={leadRegionAlignedToProject}
+                value={leadRegionAlignedToProject}
+                onchange={handleLeadRegionAlignedToProjectValue}
+                style="display: inline-block; width: 24px;"
+            ></lightning-input>
+            <span style="font-size: 12px;">*Lead region aligned to project?</span>
+            <div class="help-text margin-top">
+                <c-custom-help-text 
+                    onhidehelptext={handlePublishEvent}
+                    helptext={leadRegionAlignedHelpText}
+                ></c-custom-help-text>
+            </div>
+        </div>
+    </template>
+    <template if:true={showPromotionalPackBlock}>
+        <div class="slds-grid slds-p-top_small">
+            <div class="slds-col slds-p-right_x-small">
+                <lightning-input
+                        class="slds-p-top_xxx-small"
+                        type="checkbox"
+                        checked={noChangesNeededForPromotionalPack}
+                        value={noChangesNeededForPromotionalPack}
+                        onchange={handleNoChangesNeededForPromotionalPackChange}
+                        style="display: inline-block; width: 24px;"
+                ></lightning-input>
+            </div>
+            <div class="slds-col slds-p-horizontal_none">
+                <span style="font-size: 12px;">{noChangesNeededForPromotionalPackLabelText}</span>
+            </div>
+            <div class="slds-col">
+            <div class="help-text">
+                <c-custom-help-text 
+                    onhidehelptext={handlePublishEvent}
+                    helptext={noChangesNeededForPromotionalPackHelpText}
+                ></c-custom-help-text>
+            </div>
+        </div>
+        </div>
+    </template>
+    <template if:true={showAdditional}>
+        <br/>
+        <br/>
+        <span>
+            Please indicate below, in addition to the Lead Hub/Cluster/Market indicated above, any additional Hubs, Clusters and Markets that will launch this product in this Fiscal Year.
+        </span>
+        <br/>
+        <br/>
+    </template>
+    <c-lookup if:true={showAdditional}
+        selection={addRegionsTest}
+        onsearchadditionalregions={handleSearchAdditionalRegions}
+        onsearchalladditionalregions={handleSearchAllAdditionalRegions}
+        onremoveadditionalregions={handleRemoveAdditionalRegions}
+        ongetlookup={handlePublishEvent}
+        label="Additional Region(s) to launch this fiscal year"
+        placeholder="Search" 
+        infotext="Select the additional Regions part of the project scope"
+    ></c-lookup>
+    <c-lookup if:true={showAdditional}
+        selection={initialSelectionAdditionalHub}
+        onsearchadditionalhubs={handleSearchAdditionalHub}
+        onsearchalladditionalhubs={handleSearchAllAdditionalHubs}
+        onremoveadditionalhubs={handleRemoveAdditionalHubs}
+        ongetlookup={handlePublishEvent}
+        label="Additional Hub(s) to launch this fiscal year"
+        placeholder="Search"    
+        infotext="Select the additional Hubs part of the project scope"
+    ></c-lookup>
+    <c-lookup if:true={showAdditional}
+        selection={initialSelectionAdditionalCluster}
+        onsearchadditionalclusters={handleSearchAdditionalCluster}
+        onsearchalladditionalclusters={handleSearchAllAdditionalClusters}
+        onremoveadditionalclusters={handleRemoveAdditionalCluster}
+        ongetlookup={handlePublishEvent}
+        label="Additional Cluster(s) to launch this fiscal year"
+        placeholder="Search"  
+        infotext="Select the additional Clusters part of the project scope"
+    ></c-lookup>
+    <c-lookup if:true={showAdditional}
+        selection={initialSelectionAdditionalMarket}
+        onsearchadditionalmarkets={handleSearchAdditionalMarket}
+        onsearchalladditionalmarkets={handleSearchAllAdditionalMarkets}
+        ongetlookup={handlePublishEvent}
+        onselectionchange={handleAdditionalMarketChange}
+        onremoveadditionalmarkets={handleAdditionalMarketChange}
+        label="Additional Market(s) to launch this fiscal year"
+        data-field="Additional Market"
+        placeholder="Search"   
+        infotext="Select the additional Markets part of the project scope"
+    ></c-lookup>
+</template>

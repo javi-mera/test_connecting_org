@@ -1,0 +1,29 @@
+<template>
+    <template if:false={hideComponent}>
+        <h2 class="slds-card__header-title slds-grid">
+            <span class="slds-text-heading_small slds-col">Items to Approve</span>
+            <div class="slds-col_bump-left">
+                <lightning-button
+                    if:true={hasItemsToApprove}
+                    class="slds-var-p-left_xx-small"
+                    variant="brand"
+                    label="Delegate OOO Approvals" 
+                    onclick={openDelegateOOOApprovalModal} 
+                ></lightning-button>
+            </div>
+        </h2>
+        <div if:true={hasItemsToApprove} class="slds-card slds-var-p-around_small">
+            <div class="slds-card__body">
+                <lightning-datatable
+                    columns={_columns}
+                    data={_data}
+                    show-row-number-column
+                    hide-checkbox-column
+                    key-field="id"
+                    onrowselection={onRowSelectionHandle}
+                >
+                </lightning-datatable>
+            </div>
+        </div>
+    </template>
+</template>

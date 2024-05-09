@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title={approvalTitle} icon-name="standard:approval">
+        <article class="slds-card bacardi-card slds-var-p-around_small slds-m-bottom_small">
+            <lightning-formatted-rich-text value={governanceHighlightText}></lightning-formatted-rich-text>
+        </article>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="small"></lightning-spinner>
+        </template>
+        <lightning-datatable
+            if:false={isLoading}
+            class="approvalHistoryDatatable"
+            columns={columns}
+            data={customApprovalHistory}
+            key-field="id"
+            column-widths-mode="auto"
+            hide-checkbox-column
+        >
+        </lightning-datatable>
+    </lightning-card>
+</template>

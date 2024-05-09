@@ -1,0 +1,22 @@
+.approval_bottom-border {
+    border-bottom: 1px solid black;
+}
+
+.approval_bottom-border ~ td {
+    border-bottom: 1px solid black;
+}
+
+.approvalHistoryDatatable .slds-table .slds-th__action .slds-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: pre-line;
+}
+
+.approvalHistoryDatatable .slds-table .slds-th__action {
+    height: 2.3rem;
+}
+
+.approvalHistoryDatatable .slds-table .slds-line-height_reset {
+    height: 0.2rem;
+}

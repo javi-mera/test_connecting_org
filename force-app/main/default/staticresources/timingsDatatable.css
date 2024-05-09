@@ -1,0 +1,377 @@
+.timingsDatatable[data-is-project-record-page="true"],
+.timingsDatatable[data-is-snapshot-record-page="true"] {
+    pointer-events: none;
+}
+
+/*hide the 1st column*/
+.timingsDatatable[data-is-snapshot-record-page="false"] tr td:first-child,
+.timingsDatatable[data-is-snapshot-record-page="false"] tr th:first-child {
+    display:none;
+}
+
+/*header background*/
+.timingsDatatable .slds-table_header-fixed_container,
+.timingsDatatable .slds-cell-fixed {
+    background-color: rgb(217, 217, 217);
+}
+
+/*colors for passed steps for Complex Projects*/
+.timingsDatatable[data-opportunity-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-bca-submitted="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bca-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-bcv-submitted="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-bcv-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-commercial-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-commercial-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-production-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-shipment-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-on-shelf-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(8),
+.timingsDatatable[data-plr-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(9) {
+    background-color: rgb(243, 243, 243);
+}
+
+/*colors for passed steps for Business Enabler*/
+.timingsDatatable[data-is-bca-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-bcv-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bcv-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-commercial-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-commercial-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(243, 243, 243);
+}
+
+/*colors for passed steps for Geo Simple*/
+.timingsDatatable[data-is-bca-submitted="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-shipment-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(5) {
+    background-color: rgb(243, 243, 243);
+}
+
+/*colors for passed steps for Geo Complex*/
+.timingsDatatable[data-is-bca-submitted="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-on-shelf-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-project-status="Completed"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(7) {
+    background-color: rgb(243, 243, 243);
+}
+
+/*colors for passed steps for Repack Simple*/
+.timingsDatatable[data-opportunity-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bca-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bca-passed="true"][data-bcv-passed="false"][data-is-project-submitted="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-bcv-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(243, 243, 243);
+}
+
+
+/*colors for on track steps for Complex Projects*/
+.timingsDatatable[data-opportunity-passed="false"][data-opportunity-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-bcv-passed="false"][data-is-project-submitted="false"][data-bcv-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-commercial-passed="false"][data-customer-meeting-tracking="on"][data-is-complex-project="true"][data-is-complex-repack="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="on"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-commercial-passed="false"][data-commercial-tracking="on"][data-is-complex-project="true"][data-is-complex-repack="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="on"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(8),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="on"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(9) {
+    background-color: rgb(220, 233, 213);
+}
+
+/*colors for on track steps for Business Enabler*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bcv-passed="false"][data-is-project-submitted="false"][data-bcv-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="on"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(220, 233, 213);
+}
+
+/*colors for on track steps for Geo Simple*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="on"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="on"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="on"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="on"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-tracking="on"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(5) {
+    background-color: rgb(220, 233, 213);
+}
+
+/*colors for on track steps for Geo Complex*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="on"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(7) {
+    background-color: rgb(220, 233, 213);
+}
+
+/*colors for on track steps for Repack Simple*/
+.timingsDatatable[data-opportunity-passed="false"][data-opportunity-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+/*.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),*/
+.timingsDatatable[data-is-bcv-submitted="false"][data-bcv-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="false"][data-customer-meeting-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="on"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(220, 233, 213);
+}
+
+
+/*colors for off track steps for Complex Projects*/
+.timingsDatatable[data-opportunity-passed="false"][data-opportunity-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-bcv-passed="false"][data-is-project-submitted="false"][data-bcv-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-commercial-passed="false"][data-customer-meeting-tracking="off"][data-is-complex-project="true"][data-is-complex-repack="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-passed="false"][data-customer-meeting-tracking="off"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-commercial-passed="false"][data-commercial-tracking="off"][data-is-complex-project="true"][data-is-complex-repack="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-passed="false"][data-commercial-tracking="off"][data-is-complex-project="true"][data-is-complex-repack="false"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(8),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="off"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(9) {
+    background-color: rgb(248, 230, 208);
+}
+
+/*colors for off track steps for Business Enabler*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-bcv-passed="false"][data-is-project-submitted="false"][data-bcv-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="off"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(248, 230, 208);
+}
+
+/*colors for off track steps for Geo Simple*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="off"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="off"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="off"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="off"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="false"][data-on-shelf-tracking="off"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(5) {
+    background-color: rgb(248, 230, 208);
+}
+
+/*colors for off track steps for Geo Complex*/
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-customer-meeting-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2),
+.timingsDatatable[data-is-commercial-submitted="false"][data-commercial-passed="false"][data-commercial-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="off"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(7) {
+    background-color: rgb(248, 230, 208);
+}
+
+/*colors for off track steps for Repack Simple*/
+.timingsDatatable[data-opportunity-passed="false"][data-opportunity-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(1),
+.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="false"][data-bca-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2),
+    /*.timingsDatatable[data-is-bca-submitted="true"][data-bcv-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),*/
+.timingsDatatable[data-is-bcv-submitted="false"][data-bcv-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3),
+.timingsDatatable[data-production-passed="false"][data-customer-meeting-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(4),
+.timingsDatatable[data-production-passed="false"][data-production-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(5),
+.timingsDatatable[data-shipment-passed="false"][data-shipment-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(6),
+.timingsDatatable[data-on-shelf-passed="false"][data-on-shelf-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(7),
+.timingsDatatable[data-plr-passed="false"][data-plr-tracking="off"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(8) {
+    background-color: rgb(248, 230, 208);
+}
+
+.timingsDatatable .slds-table .slds-th__action .slds-truncate{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: pre-line;
+}
+
+.timingsDatatable .slds-table .slds-th__action {
+    height: 1rem;
+}
+
+.timingsDatatable tr th .slds-cell-fixed {
+    padding-top: 10px !important;
+}
+
+.timingsDatatable tr th .slds-resizable__divider {
+    display: none !important;
+}
+
+.slds-scrollable_x, .slds-scrollable--x {
+    overflow-x: hidden !important;
+}
+
+/*deactivate input for Complex Projects*/
+.timingsDatatable[data-is-complex-project="true"] tr:nth-child(4) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-complex-project="true"] tr:nth-child(7) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-complex-project="true"] tr:nth-child(8) td:not([aria-readonly]) button,
+.timingsDatatable[data-opportunity-passed="true"][data-is-complex-project="true"] tr:nth-child(1) button,
+.timingsDatatable[data-is-bca-submitted="true"][data-is-complex-project="true"] tr:nth-child(2) button,
+.timingsDatatable[data-bca-passed="true"][data-is-complex-project="true"] tr:nth-child(2) button,
+.timingsDatatable[data-is-bcv-submitted="true"][data-is-complex-project="true"] tr:nth-child(3) button,
+.timingsDatatable[data-bcv-passed="true"][data-is-complex-project="true"] tr:nth-child(3) button,
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-complex-project="true"] tr:nth-child(5) button,
+.timingsDatatable[data-commercial-passed="true"][data-is-complex-project="true"] tr:nth-child(5) button,
+.timingsDatatable[data-production-passed="true"][data-is-complex-project="true"] tr:nth-child(6) button,
+.timingsDatatable[data-project-status="Completed"][data-is-complex-project="true"] tr:nth-child(9) button,
+.timingsDatatable[data-is-project-record-page="true"] tr td:not([aria-readonly]) button {
+    display: none;
+    padding-right: 1.7rem;
+}
+
+/*deactivate input for Business Enabler*/
+.timingsDatatable[data-is-business-enabler="true"] tr:nth-child(3) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-business-enabler="true"] tr:nth-child(6) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-business-enabler="true"] tr:nth-child(7) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-bca-submitted="true"][data-is-business-enabler="true"] tr:nth-child(1) button,
+.timingsDatatable[data-bca-passed="true"][data-is-business-enabler="true"] tr:nth-child(1) button,
+.timingsDatatable[data-is-bcv-submitted="true"][data-is-business-enabler="true"] tr:nth-child(2) button,
+.timingsDatatable[data-bcv-passed="true"][data-is-business-enabler="true"] tr:nth-child(2) button,
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-business-enabler="true"] tr:nth-child(4) button,
+.timingsDatatable[data-commercial-passed="true"][data-is-business-enabler="true"] tr:nth-child(4) button,
+.timingsDatatable[data-production-passed="true"][data-is-business-enabler="true"] tr:nth-child(5) button,
+.timingsDatatable[data-project-status="Completed"][data-is-business-enabler="true"] tr:nth-child(8) button {
+    display: none;
+    padding-right: 1.7rem;
+}
+
+/*deactivate input for Geo Simple*/
+.timingsDatatable[data-is-geo-simple="true"] tr:nth-child(2) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-geo-simple="true"] tr:nth-child(4) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-geo-simple="true"] tr:nth-child(5) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-bca-submitted="true"][data-is-geo-simple="true"] tr:nth-child(1) button,
+.timingsDatatable[data-bca-passed="true"][data-is-geo-simple="true"] tr:nth-child(1) button,
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-simple="true"] tr:nth-child(3) button,
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-simple="true"] tr:nth-child(3) button {
+    display: none;
+    padding-right: 1.7rem;
+}
+
+/*deactivate input for Geo Complex*/
+.timingsDatatable[data-is-geo-complex="true"] tr:nth-child(2) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-geo-complex="true"] tr:nth-child(5) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-geo-complex="true"] tr:nth-child(6) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-bca-submitted="true"][data-is-geo-complex="true"] tr:nth-child(1) button,
+.timingsDatatable[data-bca-passed="true"][data-is-geo-complex="true"] tr:nth-child(1) button,
+.timingsDatatable[data-is-commercial-submitted="true"][data-is-geo-complex="true"] tr:nth-child(3) button,
+.timingsDatatable[data-commercial-passed="true"][data-is-geo-complex="true"] tr:nth-child(3) button,
+.timingsDatatable[data-production-passed="true"][data-is-geo-complex="true"] tr:nth-child(4) button,
+.timingsDatatable[data-project-status="Completed"][data-is-geo-complex="true"] tr:nth-child(7) button {
+    display: none;
+    padding-right: 1.7rem;
+}
+
+/*deactivate input for Repack Simple*/
+.timingsDatatable[data-is-repack-simple="true"] tr:nth-child(4) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-repack-simple="true"] tr:nth-child(6) td:not([aria-readonly]) button,
+.timingsDatatable[data-is-repack-simple="true"] tr:nth-child(7) td:not([aria-readonly]) button,
+.timingsDatatable[data-opportunity-passed="true"][data-is-repack-simple="true"] tr:nth-child(1) button,
+.timingsDatatable[data-is-bca-submitted="true"][data-is-repack-simple="true"] tr:nth-child(2) button,
+.timingsDatatable[data-bca-passed="true"][data-is-repack-simple="true"] tr:nth-child(2) button,
+.timingsDatatable[data-is-bcv-submitted="true"][data-is-repack-simple="true"] tr:nth-child(3) button,
+.timingsDatatable[data-bcv-passed="true"][data-is-repack-simple="true"] tr:nth-child(3) button,
+.timingsDatatable[data-production-passed="true"][data-is-repack-simple="true"] tr:nth-child(5) button,
+.timingsDatatable[data-project-status="Completed"][data-is-repack-simple="true"] tr:nth-child(8) button,
+.timingsDatatable[data-is-project-record-page="true"] tr td:not([aria-readonly]) button {
+    display: none;
+    padding-right: 1.7rem;
+}
+
+/*!*Passed on text*!*/
+/*.timingsDatatable[data-opportunity-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-commercial-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(5) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-production-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(6) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-commercial-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(4) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-production-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(5) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-production-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(4) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-opportunity-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-production-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(5) lightning-formatted-date-time::before {*/
+/*    content: 'Passed on: ';*/
+/*}*/
+
+/*!*Submitted on text*!*/
+/*.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-bcv-passed="false"][data-is-project-submitted="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-bcv-passed="false"][data-is-project-submitted="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-bcv-passed="false"][data-is-project-submitted="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="false"][data-is-project-submitted="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-bcv-passed="false"][data-is-project-submitted="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3) lightning-formatted-date-time::before {*/
+/*    content: 'Submitted on: ';*/
+/*}*/
+
+/*!*Approved on text*!*/
+/*.timingsDatatable[data-bca-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bcv-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(3) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bcv-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(1) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bcv-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bca-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(2) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-bcv-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(3) lightning-formatted-date-time::before {*/
+/*    content: 'Approved on: ';*/
+/*}*/
+
+/*!*Shipped on text for Geo Simple only*!*/
+/*.timingsDatatable[data-shipment-passed="true"][data-is-geo-simple="true"] tr[class="slds-hint-parent"]:nth-child(3) lightning-formatted-date-time::before {*/
+/*    content: 'Shipped on: ';*/
+/*}*/
+
+/*!*On Shelf on text*!*/
+/*.timingsDatatable[data-on-shelf-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(8) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-on-shelf-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(7) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-on-shelf-passed="true"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(6) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-on-shelf-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(7) lightning-formatted-date-time::before {*/
+/*    content: 'On Shelf on: ';*/
+/*}*/
+
+/*!*Completed on text*!*/
+/*.timingsDatatable[data-plr-passed="true"][data-is-complex-project="true"] tr[class="slds-hint-parent"]:nth-child(9) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-plr-passed="true"][data-is-business-enabler="true"] tr[class="slds-hint-parent"]:nth-child(8) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-project-status="Completed"][data-is-geo-complex="true"] tr[class="slds-hint-parent"]:nth-child(7) lightning-formatted-date-time::before,*/
+/*.timingsDatatable[data-plr-passed="true"][data-is-repack-simple="true"] tr[class="slds-hint-parent"]:nth-child(8) lightning-formatted-date-time::before {*/
+/*    content: 'Completed on: ';*/
+/*}*/

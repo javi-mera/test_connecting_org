@@ -1,0 +1,110 @@
+.box {
+    border-radius: 3px;
+    min-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 5px 5px 5px;
+    font-weight: 500;
+    width: 9%;
+}
+
+.textBox {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    width: 9%;
+}
+
+.currentTextBox {
+    color:black;
+    font-size: 15px;
+    font-weight: 500;   
+}
+
+.completedTextBox {
+    /*color: #00cc99;
+    color:  rgb(23,160,161);*/
+    color:  rgb(22,206,186);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pendingTextBox {
+    color: lightgrey;
+}
+
+.completedBox {
+    border: 2px solid rgb(22,206,186);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color:  rgb(22,206,186);
+}
+
+.currentBox {
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.pendingBox {
+    border: 2px solid lightgrey;
+    color: lightgray;
+}
+
+.emptyBox {
+    width: 9%;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.secondRow {
+    position: relative;
+    top: -35px;
+}
+
+.firstRow{
+    padding-bottom: 35px;
+}
+
+.visible{
+    display: block;
+}
+
+.notVisible {
+    display: none;
+}
+
+.firstRowEditFlow{
+    padding-bottom: 20px;
+}
+
+.secondRowEditFlow {
+    position: relative;
+    top: -25px;
+}
+
+.visibleEditFlow{
+    display: block;
+}
+
+.visibleEditFlow img {
+    height: 20px;
+}
+
+.textBoxFontEditFlow {
+    font-size: 11px;
+}
+
+.boxFontEditFlow {
+    font-size: 12px;
+}

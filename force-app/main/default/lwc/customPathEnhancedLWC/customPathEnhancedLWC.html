@@ -1,0 +1,30 @@
+<template>
+  <template if:true={isComponentVisible}>
+    <div class={outsideClass}>
+      <template for:each={phases} for:item="phase">
+        <template if:false={phase.isEmpty}>
+          <div key={phase.label} class={phase.class}>
+            <span>{phase.label}</span>
+          </div>
+        </template>
+        <template if:true={phase.isEmpty}>
+          <div class="slds-col emptyBox" key={phase.key}></div>
+        </template>
+      </template>
+    </div>
+    <div class={outsideCursorClass}>
+      <template for:each={phases} for:item="phase">
+        <template if:false={phase.isEmpty}>
+          <div class="slds-col emptyBox centered" key={phase.label}>
+            <div class={phase.cursor}>
+              <img src={pathCursorURL} alt="cursor" />
+            </div>
+          </div>
+        </template>
+        <template if:true={phase.isEmpty}>
+          <div class="emptyBox" key={phase.key}></div>
+        </template>
+      </template>
+    </div>
+  </template>
+</template>

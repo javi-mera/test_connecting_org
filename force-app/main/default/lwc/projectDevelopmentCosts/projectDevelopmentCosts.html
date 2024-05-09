@@ -1,0 +1,15 @@
+<template>
+    <lightning-layout class="slds-var-p-top_small">
+        <lightning-layout-item size="8">
+            <lightning-input 
+                type="number"
+                disabled
+                name="projectDevelopmentCost" 
+                label="Indicative Project Development Costs to date ($K)"
+                variant="label-inline"
+                value={projectDevelopmentCostsToDate}
+                field-level-help={labels.projectDevelopmentCostsLabel}
+            ></lightning-input>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

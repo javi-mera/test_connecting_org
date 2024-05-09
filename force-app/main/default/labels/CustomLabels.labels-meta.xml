@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Additional_Cluster_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Cluster Help Text</shortDescription>
+        <value>Additional Cluster(s) within the project scope. Auto-populated upon selection of the additional market(s).</value>
+    </labels>
+    <labels>
+        <fullName>Additional_Hub_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Hub Help Text</shortDescription>
+        <value>Additional Hub(s) within the project scope. Auto-populated upon selection of the additional market(s).</value>
+    </labels>
+    <labels>
+        <fullName>Additional_Market_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Market Help Text</shortDescription>
+        <value>Select the additional Market(s) within the project scope.</value>
+    </labels>
+    <labels>
+        <fullName>Additional_Region_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Region Help Text</shortDescription>
+        <value>Additional Region(s) within the project scope. Auto-populated upon selection of the additional market(s).</value>
+    </labels>
+    <labels>
+        <fullName>Approval_History_Highlight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Approval History Highlight</shortDescription>
+        <value>Click &lt;a href=&quot;https://bacardi.sharepoint.com/:p:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/6Ds%20Framework%20and%20INNOVATOR%20Support/Introduction%20to%206Ds%20Governance%20Information/Latest%20Innovator%20Governance.pptx?d=wf3ebfb2b78ec4b4bac0fb1f3bccd7d77&amp;csf=1&amp;web=1&amp;e=Fxmgkp&quot;&gt;here&lt;/a&gt; to view the Governance for all Project Classifications, including projects with Secondary Region approvals.</value>
+    </labels>
+    <labels>
+        <fullName>BoardApprovalAlignmentCommentMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Board Approval Alignment Comment Message</shortDescription>
+        <value>*If you have not yet received Board approval for this project to progress, please add in details on in this comment box as why this project is needed and when you would expect Board approval of the project.</value>
+    </labels>
+    <labels>
+        <fullName>BoardApprovalAlignmentMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Board Approval Alignment Message</shortDescription>
+        <value>Bacardi&apos;s Board would like to review and align to all Brands&apos; Innovation pipelines. Projects are shared with the Board as part of annual reviews. If this project you are submitting was part of the pipeline shared with the Board, then you are fine to confirm the project has been aligned with them.</value>
+    </labels>
+    <labels>
+        <fullName>Brand_Activation_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brand Activation NSV Info</shortDescription>
+        <value>Brand Activation is expected to deliver $0.5m NSV or above in the first 12 months.</value>
+    </labels>
+    <labels>
+        <fullName>Brand_Activation_Recommended_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brand Energzier Recommended Threshold</shortDescription>
+        <value>the recommended minimum first 12 months $NSV threshold is $0.5m.</value>
+    </labels>
+    <labels>
+        <fullName>Brand_Energizer_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brand Energizer NSV Info</shortDescription>
+        <value>A Brand Energizer is expected to deliver $3m or above of incremental NSV per region in the first 12 months.​</value>
+    </labels>
+    <labels>
+        <fullName>Brand_Energizer_Recommended_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brand Energzier Recommended Threshold</shortDescription>
+        <value>the recommended minimum first 12 months $NSV threshold is $3m.</value>
+    </labels>
+    <labels>
+        <fullName>Business_Enabler_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Enabler NSV Info</shortDescription>
+        <value>A Business Enabler is expected to deliver $3m or above of incremental NSV per region in the first 12 months.​</value>
+    </labels>
+    <labels>
+        <fullName>Business_Enabler_Recommended_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Enabler Recommended Threshold</shortDescription>
+        <value>the recommended minimum first 12 months $NSV threshold is $3m.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_GiftBox_Exception</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist GiftBox Exception</shortDescription>
+        <value>If your giftbox RSP is less than US$40 and requires an exception, please tick this box and provide an explanation.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_GiftBox_Point</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist GiftBox Point</shortDescription>
+        <value>Please note that any individual giftbox with no value added items (i.e. single container/bottle in a box) should have an RSP (Retail Sales Price) of US$40 or more.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Innovation_Supply_Community_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Innovation Supply Community Link</shortDescription>
+        <value>&lt;p&gt;Contact list link: &lt;a href=&quot;https://bacardi.sharepoint.com/:p:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/6Ds%20Framework%20and%20INNOVATOR%20Support/Support%20Tools%20and%20Templates%20(including%20Development%20Documents)/Innovation%20Supply%20Community%20%26%20Support.pptx?d=wb43d5e57f1c7460984f6a5f7d718b62d&amp;csf=1&amp;web=1&amp;e=kH5TsM&quot;&gt;Innovation Supply Community &amp; Support.pptx&lt;/a&gt;&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Legal_And_Regs_Primos_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Legal And Regs Primos Link</shortDescription>
+        <value>&lt;p&gt;Contact list link: &lt;a href=&quot;https://bacardi.sharepoint.com/:x:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/6Ds%20Framework%20and%20INNOVATOR%20Support/Introduction%20to%206Ds%20Governance%20Information/Legal%20and%20Regs%20Primos%20who%20support%20on%20Innovation.xlsx?d=w643a11abaa6845b0b4f1b898718423bd&amp;csf=1&amp;web=1&amp;e=ZmjbDz&quot;&gt;Legal and Regs Primos who support on Innovation.xlsx&lt;/a&gt;&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Legal_Regulatory_Approvals_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Legal Regulatory Approvals Confirmation</shortDescription>
+        <value>* I confirm this project has been approved by Legal and Regulatory Primos of all markets in scope.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Legal_Regulatory_Approvals_Low_Point</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Legal Regulatory Approvals Low Point</shortDescription>
+        <value>Ensure you obtain legal and regulatory approvals from all markets in scope after BCA approval.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Legal_Regulatory_Approvals_Medium_Point</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Legal Regulatory Approvals Medium Point</shortDescription>
+        <value>Ensure you obtain legal and regulatory approvals from all markets in scope before BCV submission.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Low_Promo_Pack_BCA_Intro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Low Promo Pack BCA Intro</shortDescription>
+        <value>You are about to submit this project into the BCA. There is a checklist below, where some tasks need to be completed before BCA submission and some after BCA approval.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Low_Promo_Pack_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Low Promo Pack Confirmation</shortDescription>
+        <value>* I, Project Leader, confirm that I will follow the above checklist for my promotional pack project.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Low_Promo_Pack_Production_Intro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Low Promo Pack Production Intro</shortDescription>
+        <value>&lt;b&gt;Checklist completed, no actions required.&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Medium_Promo_Pack_BCA_Intro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Medium Promo Pack BCA Intro</shortDescription>
+        <value>You are about to submit this project into the BCA. There is a checklist below, where some tasks need to be completed before BCA submission and some by BCV submission.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Medium_Promo_Pack_BCV_Intro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Medium Promo Pack BCV Intro</shortDescription>
+        <value>Please confirm that you have completed the tasks below before the BCV submission.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Medium_Promo_Pack_Production_Intro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Medium Promo Pack Production Intro</shortDescription>
+        <value>Checklist completed at BCV submission, no actions required.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Pack_Dev_Manager_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Pack Dev Manager Confirmation</shortDescription>
+        <value>* I confirm that I contacted the Packaging Development Manager and followed their instruction to qualify this promotional pack. Please contact the Packaging Development Manager, if not already done.</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Pack_Dev_Manager_Point</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Pack Dev Manager Point</shortDescription>
+        <value>Please contact the Packaging Development Manager (details below) before BCA submission, to confirm if your project will be supported by a supply chain center. Alternatively the Packaging Development Manager will provide guidance on how to develop the project in your market.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Meeting_Date_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Meeting Date Text</shortDescription>
+        <value>Presentations to customers usually happen 9-12 months before the innovation is due on shelf. Check with commercial primos in your lead region to understand when the date is likely to be. If the customer meeting is in 3 months or less, and the project has not been through a BCV, then consider whether you will be ready in time for that customer meeting as you may not be able to provide all of the materials they require for listing.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Meeting_Highlight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Meeting Highlight</shortDescription>
+        <value>Customers are key to unlocking distribution for our Innovations, Re-Packs and Promotional Packs. We must be ready to present detailed information on our projects to them, which can be 9-12 months before the on-shelf date. It is highly recommended Primos have passed BCV before they present to customers. To help manage expectations, it is recommended projects are kicked off 18-24 months BEFORE their planned on shelf date to best accommodate for customer meetings.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Meeting_Presentation_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Meeting Presentation Link</shortDescription>
+        <value>https://bacardi.sharepoint.com/:x:/r/sites/OneMarketing/_layouts/15/Doc.aspx?sourcedoc=%7B4674BFA6-3957-43DC-B6DD-870D8B3F72E4%7D&amp;file=Key%20Customer%20Sell%20in%20Window%20Information%20Jan%202023.xlsx&amp;_DSL=1&amp;action=default&amp;mobileredirect=true</value>
+    </labels>
+    <labels>
+        <fullName>Development_Document_Templates_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Development Document Templates Link</shortDescription>
+        <value>https://bacardi.sharepoint.com/:f:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Tools%20and%20Templates%20(including%20Development%20Documents)/Development%20Documents%20%26%20Liquid%20Brief?csf=1&amp;web=1&amp;e=IflAF6</value>
+    </labels>
+    <labels>
+        <fullName>Distribution_Channel_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Distribution Channel Help Text</shortDescription>
+        <value>Select Distribution Channel (Domestic or Travel Retail).</value>
+    </labels>
+    <labels>
+        <fullName>ELearningHowToApproverProjectsLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>E-Learning How To Approver Projects Link</shortDescription>
+        <value>https://bacardi.sharepoint.com/:v:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Innovator%20%26%206D%27s%20Training/For%20Approvers/Innovator%20%27How%20to%27%20Learning%20Videos/E-Learning%20-%20How%20to%20Approve%20Projects%20in%20Innovator%20.mp4?csf=1&amp;web=1&amp;e=lnfzix&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</value>
+    </labels>
+    <labels>
+        <fullName>Fearless_Bet_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fearless Bet NSV Info</shortDescription>
+        <value>A Fearless Bet is expected to deliver $1m or above of incremental NSV per region in the first 12 months.​</value>
+    </labels>
+    <labels>
+        <fullName>Fearless_Bet_Recommended_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fearless Bet Recommended Threshold</shortDescription>
+        <value>the recommended minimum first 12 months $NSV threshold is $1m.</value>
+    </labels>
+    <labels>
+        <fullName>Financial_Threshold_Not_Met_Default_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Financial Threshold Not Met Default Text</shortDescription>
+        <value>This project does not meet the $NSV threshold for incremental NSV per region in the first 12 months. Please provide some comments detailing why it does not meet the threshold.​</value>
+    </labels>
+    <labels>
+        <fullName>Geograhpical_Extension_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geograhpical Extension NSV Info</shortDescription>
+        <value>Geographical Extension (GE) is expected to deliver, &lt;u&gt;PER REGION&lt;/u&gt;:  
+           &lt;p style=&quot;margin: 0;&quot;&gt;• $0.5m NSV+ in next 12 months for a ‘Simple’ GE (i.e. no packaging and/or liquid changes required). &lt;/p&gt;
+            &lt;p style=&quot;margin: 0;&quot;&gt;• $2m NSV+ in the first 12 months for a Complex Geo Extension (i.e. requires packaging and/or liquid changes).&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_Financial_Threshold_Not_Met</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension Financial Threshold Not Met</shortDescription>
+        <value>The value you have entered for Y1 NSV ($k) does need meet the expected Yr 1 NSV ($k) threshold – see green bar above. &lt;br/&gt; 
+&lt;b&gt;Action&lt;/b&gt;: Please update the value entered, so that the Y1 NSV ($k) meets or exceeds the expected threshold. Alternatively, leave the value as is, and enter comments to Approvers in the box below, as to why this project should progress, even though it is below the expected threshold. &lt;br/&gt;
+The threshold targets for Geo Extensions (GE), are the aggregation of all the markets participating in the GE, PER REGION, in the next 12 months. Please detail in your comments to Approvers, how your market is contributing to the regional targets, outlining other markets from your region participating in the GE, to give approvers reassurance it is driving scale. Please connect with your Regional Innovation Lead if you require information on other markets expected to extend the innovation to your region.</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_NSV_Email_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension NSV Email Info</shortDescription>
+        <value>The threshold targets for Geo Extensions (GE), are the aggregation of all the markets participating in the GE, PER REGION, and this project might be for only one of those participating markets from the region. Please check with Project Leaders and Innovation Regional Leaders if you need further information.</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_Parent_Project_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension Parent Project Help Text</shortDescription>
+        <value>Link new Geo Extension Project to the original Innovation Project (Parent Project). For example, if ‘Amazing Innovation’ was launched originally in North America and a new Geo Extension Project was raised to extend to New Zealand, then the new Geo Extension for New Zealand would need to be ‘linked’ to the original North America Project (Parent Project). Projects are linked by selecting the ‘Parent’ Project from the drop-down list. Only applicable to Projects originally launched post FY20 (including FY20).</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_Recommended_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension Recommended Threshold</shortDescription>
+        <value>the recommended first 12 months $NSV threshold is $0.5m for Simple Geo Extension (no packaging or liquid changes required) and $2m for above for Complex Geo Extension (artwork and/or liquid changes required).</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_Sub_Classification_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension Sub Classification Help Text</shortDescription>
+        <value>An “Innovation Geo Extension” is the extension of a product that originally launched in or after FY20 (01/04/2019). 
+An “Other Geo Extension” is the extension of a product that originally launched before FY20 (pre 01/04/2019) and any Product Modification extension.</value>
+    </labels>
+    <labels>
+        <fullName>Geographical_Extension_i_icon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geographical Extension i-icon</shortDescription>
+        <value>The threshold targets for Geo Extensions (GE), are the aggregation of all the markets participating in the GE per region in the next 12 months. Please detail in your comments to Approvers, how your market is contributing to the regional targets, outlining other markets that will also GE this innovation, to give approvers reassurance it is driving scale. Please connect with your Regional Innovation Lead if you require information on other markets expected to extend the innovation to your region.</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_Development_Documents_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Development Documents Info</shortDescription>
+        <value>&lt;a class=&quot;link&quot; href=&quot;https://bacardi.sharepoint.com/:f:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Tools%20and%20Templates%20(including%20Development%20Documents)/Development%20Documents%20%26%20Liquid%20Brief?csf=1&amp;web=1&amp;e=3fTkkh&quot; target=&quot;_blank&quot;&gt;Development Documents required for Innovator Submissions&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_Documents_Repository_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Documents Repository Title</shortDescription>
+        <value>Innovator and Bacardi Innovation 6Ds Framework Support</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_Governance_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Governance Info</shortDescription>
+        <value>&lt;a class=&quot;link&quot; href=&quot;https://bacardi.sharepoint.com/:p:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Innovation%20Approvers%20-%20FIND%20YOUR%20APPROVERS%20HERE/Latest%20Innovation%20Approvers.pptx?d=wf3ebfb2b78ec4b4bac0fb1f3bccd7d77&amp;csf=1&amp;web=1&amp;e=VM6WyZ&quot; target=&quot;_blank&quot;&gt;Information on Governance and Approvers&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_One_Marketing_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page One Marketing Info</shortDescription>
+        <value>This &lt;a class=&quot;link&quot; href=&quot;https://bacardi.sharepoint.com/:f:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION?csf=1&amp;web=1&amp;e=YEtbNd&quot; target=&quot;_blank&quot;&gt;One Marketing&lt;/a&gt; link has all the information and support you will need for using Innovator and the Bacardi Innovation 6Ds framework. In addition, below are some specific links you might find useful:</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_Submission_Calendar_To_BCA_BCV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Submission Calendar To BCA BCV Info</shortDescription>
+        <value>&lt;a class=&quot;link&quot; href=&quot;https://bacardi.sharepoint.com/:x:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/6Ds%20Framework%20and%20INNOVATOR%20Support/Monthly%20BCA%20%26%20BCV%20Approval%20Meeting%20Information/2023%20monthly%20BCA%20-%20BCV%20meetings.xlsx?d=wbda7af98238a49c38eaf4a281d58ff0b&amp;csf=1&amp;web=1&amp;e=pWv3Tf&quot; target=&quot;_blank&quot;&gt;Calendar to schedule a Fearless Bet, Brand Energiser or Re-Pack into a BCA or BCV Monthly Approval meeting&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Home_Page_Training_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Training Info</shortDescription>
+        <value>&lt;a class=&quot;link&quot; href=&quot;https://bacardi.sharepoint.com/:f:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Innovator%20%26%206D%27s%20Training?csf=1&amp;web=1&amp;e=wknctD&quot; target=&quot;_blank&quot;&gt; Training documents and videos on Innovator and the Bacardi 6Ds Innovation Framework&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Innovator_OrgWideEmailAddress_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Innovator OrgWideEmailAddress Name</shortDescription>
+        <value>CCE Platform</value>
+    </labels>
+    <labels>
+        <fullName>Investment_Required_Deliverable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Investment Required Deliverable</shortDescription>
+        <value>A&amp;P investment required in Year 1 ($000 USD). Enter as a positive number, no minus symbol</value>
+    </labels>
+    <labels>
+        <fullName>Latest_Project_PL_Templates_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Latest Project P&amp;L Templates Link</shortDescription>
+        <value>https://bacardi.sharepoint.com/sites/OneMarketing/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=IflAF6&amp;cid=9646972c%2D1998%2D41b5%2Db3c8%2D3801fd5ee168&amp;FolderCTID=0x01200031C413B56F2C554787775EC64AA925B6&amp;id=%2Fsites%2FOneMarketing%2FShared%20Documents%2FOne%20Marketing%20Hub%2FCAPABILITY%2FINNOVATION%20%26%20PRODUCT%20MODIFICATION%2FInnovator%20%26%206D%27s%20Innovation%20Process%2FTools%20and%20Templates%20%28including%20Development%20Documents%29%2FInnovation%20Finance%20Tools&amp;viewid=d86b6611%2D392b%2D4789%2Da158%2D7300f5ac8b00</value>
+    </labels>
+    <labels>
+        <fullName>Latest_Project_PL_Templates_Link_Promotional_Pack</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Latest_Project PL Templates Link Promotional Pack</shortDescription>
+        <value>https://bacardi.sharepoint.com/:x:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Innovator%20%26%206D%27s%20Innovation%20Process/Tools%20and%20Templates%20(including%20Development%20Documents)/Innovation%20Finance%20Tools/New%20Promotional%20pack%20-%20simplified%20PL%20template%20-%20Mar24.xlsx?d=wfdf22fc0bf7f4d0080e4e4ca1c17e655&amp;csf=1&amp;web=1&amp;e=QsCAsb</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Cluster_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Cluster Help Text</shortDescription>
+        <value>This is the Cluster that contains the lead market, that will deliver the most NSV for the project. It will be auto-populated upon selection of the lead market.</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Hub_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Hub Help Text</shortDescription>
+        <value>This is the hub that contains the lead market, that will deliver the most NSV for the project. It will be auto-populated upon selection of the lead market.</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Market_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Market Help Text</shortDescription>
+        <value>Select the Lead Market for this project (i.e. which market will deliver the most NSV/biggest volume for the project). Only possible to enter one market as a lead market.</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Region_Aligned_To_Project_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Region Aligned To Project Help Text</shortDescription>
+        <value>Tick this box to confirm this project has been aligned with the lead region and or cluster that will be launching the innovation.</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Region_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Region Help Text</shortDescription>
+        <value>This is the region that will deliver the most NSV/has the most volume for the project. It will be auto-populated upon selection of the lead market.</value>
+    </labels>
+    <labels>
+        <fullName>NSV_By_Regions_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NSV By Regions Help Text</shortDescription>
+        <value>Please complete the table below by apportioning the first 12 months $NSV to the participating regions. Do this by indicating the % split for each region (the regions are the ones you entered on the Geography tab). The total (beneath the table) needs to equal 100%.</value>
+    </labels>
+    <labels>
+        <fullName>No_Changes_Needed_for_Promotional_Pack_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Changes Needed for Promotional Pack Help Text</shortDescription>
+        <value>Please connect with the relevant Legal and Regulatory Primo to check what amends are required (if any) to the existing Promotional Pack to launch in the new market</value>
+    </labels>
+    <labels>
+        <fullName>No_Changes_Needed_for_Promotional_Pack_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Changes Needed for Promotional Pack Label</shortDescription>
+        <value>Please tick this box to confirm legal and regulatory have indicated NO changes are required to this existing Promotional Pack, for use in the new market(s) you are launching into.
+If you have not yet checked, then leave the box unticked – it will not prevent you from submitting. You will need to have aligned with regulatory &amp; legal pre-BCV submission.</value>
+    </labels>
+    <labels>
+        <fullName>Ongoing_Year_Two_Structural_Profitability_Deliverable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ongoing Year Two Structural Profitability Deliverable</shortDescription>
+        <value>Year 2 Structural Profitability ($GP per 9L case) Year 2 is used to compare ongoing financial performance</value>
+    </labels>
+    <labels>
+        <fullName>Original_Project_Field_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Original Project Field Label</shortDescription>
+        <value>Tick this box if Original Project is not applicable.</value>
+    </labels>
+    <labels>
+        <fullName>PLR_12_Months_Template_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PLR 12 Months Template Link</shortDescription>
+        <value>&lt;a href=&quot;https://bacardi.sharepoint.com/:p:/r/sites/OneMarketing/Shared%20Documents/One%20Marketing%20Hub/CAPABILITY/INNOVATION%20%26%20PRODUCT%20MODIFICATION/Post%20Launch%20Reviews/Frameworks%20and%20Templates/12%20Month%20Post%20Launch%20Review%20Template%20December%202021.pptx?d=w2d08a4d1e10c42999b21a0f9f96dccb1&amp;csf=1&amp;web=1&amp;e=5Ix5dr&quot;&gt;12 Month Post Launch Review Template December 2021.pptx&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PPM_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PPM Profile</shortDescription>
+        <value>Innovapp Admin</value>
+    </labels>
+    <labels>
+        <fullName>ProjectDevelopmentCostsToDateHelpText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Development Costs To Date Help Text</shortDescription>
+        <value>These are costs that have been spent on the innovation to this point. It includes costs spent on Research, Development of Liquid &amp; Packaging and any marketing material created to support the launch (i.e. Agency fees)</value>
+    </labels>
+    <labels>
+        <fullName>Project_Average_GM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Average GM</shortDescription>
+        <value>Project&apos;s average GM% (Year 1 - Year 5)</value>
+    </labels>
+    <labels>
+        <fullName>Project_Name_Info_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Name Info Text</shortDescription>
+        <value>Project Names in Innovator need to be less than 80 characters and follow a set naming convention which is &lt;br/&gt;
+&lt;p&gt;&lt;&apos;Full Brand Name&apos;&gt;&lt;&apos;space&apos;&gt;&lt;&apos;Description&apos;&gt;&lt;&apos;space&apos;&gt;&lt;&apos;Launch Year&apos;&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;&apos;Description&apos;&gt; means choosing a part of the name that clearly describes the purpose or nature of the project. This can help stakeholders easily understand what the project is about. &lt;/p&gt;&lt;br/&gt;
+&lt;div&gt;
+Fictional examples of this naming convention are: 
+&lt;ul&gt;
+  &lt;li&gt;Bombay Sapphire Premium Citrus New Flavour FY24&lt;/li&gt;
+  &lt;li&gt;Patron Prestige Blanco for GTR FY25&lt;/li&gt;
+  &lt;li&gt;Angels Envy New Distiller&apos;s Blend FY26&lt;/li&gt;
+  &lt;li&gt;Grey Goose &amp; Patron Miniature Gift Pack FY24&lt;/li&gt;
+  &lt;li&gt;Grey Goose Two Free Glasses VAP for UK FY26&lt;/li&gt;
+  &lt;li&gt;New Inno to Capture Herbal Drinks in Africa FY26&lt;/li&gt;
+  &lt;li&gt;New Non Alc Whisky Alternative FY27&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+Use this Project Name and the Project Number to communicate the project internally amongst the Project Team and Stakeholders.</value>
+    </labels>
+    <labels>
+        <fullName>Project_Name_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Name Placeholder</shortDescription>
+        <value>&lt;Full Brand Name&gt;&lt;space&gt;&lt;Description&gt;&lt;space&gt;&lt;Launch Year&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Promotional_Pack_Classification_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Promotional Pack Classification Info</shortDescription>
+        <value>Promotional Pack: These are NON-PERMANENT SKUs, including Limited Edition Packs, Value Added Packs (VAPs), Hitch Hikers or Neck Tags. These items allow for price or value promotions. Please note – if your project is for a Limited Edition that has a change of Liquid, please select Business Enabler.</value>
+    </labels>
+    <labels>
+        <fullName>Promotional_Pack_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Promotional Pack NSV Info</shortDescription>
+        <value>A Promotional Pack is expected to deliver $0.5m or above of incremental NSV per region in the first 12 months.​</value>
+    </labels>
+    <labels>
+        <fullName>Promotional_Pack_Parent_Project_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Promotional Pack Parent Project Help Text</shortDescription>
+        <value>To enable Bacardi to track what the original project was, we need to link this current project with the original one. There are some tasks that happen &apos;behind the scenes&apos;, and by knowing the original project, it will make those tasks easier.</value>
+    </labels>
+    <labels>
+        <fullName>PublicEvents</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Public Events</shortDescription>
+        <value>0237Q000000d0k0QAA</value>
+    </labels>
+    <labels>
+        <fullName>Repack_NSV_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Repack NSV Info</shortDescription>
+        <value>A Repack should deliver growth for the trademark, compared to if the Re-Pack had not happened.</value>
+    </labels>
+    <labels>
+        <fullName>Size_of_Prize_Deliverable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Size of Prize Deliverable</shortDescription>
+        <value>Cumulative Size of Prize (Incremental NSV $000 USD Year 1 - Year 5)</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Date_Format_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Date Format Info</shortDescription>
+        <value>&lt;b&gt;Note&lt;/b&gt;: The dates below are American date format (month/day/year).</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Date_In_Past</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Date In Past</shortDescription>
+        <value>Please update this project event date, as the date you have entered is in the past.</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Info</shortDescription>
+        <value>The timings tracker below aims to help Project teams better understand the likely timings for their project.
+&lt;p style=&quot;margin: 0; margin-left: 6px;&quot;&gt;• The first column, gives the Innovator suggested dates for the project, based on information from projects of a similar classification / scope.&lt;/p&gt;
+&lt;p style=&quot;margin: 0; margin-left: 6px;&quot;&gt;• The  middle column is for Primos to input dates they would like for this project.&lt;/p&gt;
+&lt;p style=&quot;margin: 0; margin-left: 6px;&quot;&gt;• If the dates inputted by Primos are before the dates suggested by Innovator, the column on the right will indicate a risk and give Primos advice on what to do.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Warning_Customer_Meeting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Warning Customer Meeting</shortDescription>
+        <value>It is recommended you have passed through the BCV before presenting your innovation to customers. Please check with supply and commercial Primos you will have enough time to prepare the required customer presentation materials available for these meetings.</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Warning_Customer_Meeting_Geo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Warning Customer Meeting Geo</shortDescription>
+        <value>It is recommended you have passed through the BCA before presenting your innovation to customers. Please check with supply and commercial Primos you will have enough time to prepare the required customer presentation materials available for these meetings.</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Warning_Text_Geo_Extension</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Warning Text Geo Extension</shortDescription>
+        <value>&lt;b&gt;Note: Timings may change based on the Product Requirements you choose in the Overview section before BCA submission. Innovator suggested timings are refreshed post BCA submission.&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Warning_Text_Repack</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Warning Text Repack</shortDescription>
+        <value>&lt;b&gt;Note: Timings may change based on the Product Requirements you choose in the Overview section on the Define phase before BCA submission. Innovator suggested timings are refreshed post BCA submission. &lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Timings_Warning_Too_Early</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timings Warning Too Early</shortDescription>
+        <value>The Project Event date you have inputted is before when Innovator suggests. Please check with your project team (including supply, marketing and commercial), your inputted date is achievable.</value>
+    </labels>
+    <labels>
+        <fullName>Trade_Type_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Trade Type Help Text</shortDescription>
+        <value>Select Trade type (Brand Home / Off Trade / On Trade / E-Commerce or other).</value>
+    </labels>
+    <labels>
+        <fullName>VAP_Expected_Price_Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAP Expected Price Warning Message</shortDescription>
+        <value>Any individual giftbox with no value added items (i.e. single container/bottle in a box) should have an RSP (Retail Sales Price) of US$40 or more.</value>
+    </labels>
+    <labels>
+        <fullName>Year_First_Gross_Profit_Deliverable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Year First Gross Profit Deliverable</shortDescription>
+        <value>Year 1 Gross Profit ($GP per 9L case). Include one off costs like listing fees</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Custom Path</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="current" type="String" />
+            <property name="phase" type="String" label="Phase" />
+            <property name="projectType" type="String" label="Project Type" />
+            <property name="projectId" type="String" label="Project Id" />
+            <property name="subType" type="String" label="Sub Type" />
+            <property
+        name="geoExtensionSubType"
+        type="String"
+        label="Geographical Extension Sub Type"
+      />
+            <property name="showPhases" type="Boolean" label="Show Phases" />
+            <property name="showStages" type="Boolean" label="Show Stages" />
+            <property name="showAll" type="Boolean" label="Show All" />
+            <property name="phaseClicked" type="String" label="Phase Clicked" />
+            <property name="isAdmin" type="Boolean" label="Is Admin?" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

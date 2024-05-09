@@ -1,0 +1,9 @@
+<template>
+    <p class="bolded">Required fields missing</p>
+    <p class="slds-var-p-top_small">The following fields are required for submitting the project into the next decision step:</p>
+    <ol class="slds-var-p-top_small">
+        <li for:each={missingFields} for:item="item" key={item}>{item}</li>
+    </ol>
+    <p class="slds-var-p-top_small" if:true={criticalKPIs} >This project is currently not meeting the Financial Success Criteria expected targets. If you have not met any of the financial tolerances, please edit the project and in the Financials section, tick the box to confirm you have approval from CMO and Lead Region Supply Chain VP (with evidence, i.e. an email from them approving this) to progress this project.</p>
+    <p class="slds-var-p-top_small" if:true={criticalConsumerKPIs}>This project is currently not meeting the Consumer KPI expected targets. If you have not met any of the Consumer Response Success Criteria, please go to edit project and tick the box to confirm you have approval from CMO and Lead Region Supply Chain VP (with evidence, i.e. an email from them approving this) to progress this project. </p>
+</template>

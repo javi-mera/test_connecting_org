@@ -1,0 +1,24 @@
+<template>
+    <lightning-layout class="slds-p-vertical_small">
+        <lightning-layout-item size="4">
+            <lightning-radio-group 
+                name="npvAchieved"
+                label="Will this project deliver the expected NSV ($) threshold indicated above?"
+                options={options}
+                onchange={npvChanged}
+                value={value}
+                type="radio"
+            >
+            </lightning-radio-group>
+        </lightning-layout-item>
+        <lightning-layout-item size="8">
+            <lightning-textarea
+                if:true={npvNotAchieved}
+                label="*Please explain why the project will not deliver the expected $NSV threshold."
+                value={willNotBeAchievedComment}
+                onchange={commentChanged}
+            >
+            </lightning-textarea>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

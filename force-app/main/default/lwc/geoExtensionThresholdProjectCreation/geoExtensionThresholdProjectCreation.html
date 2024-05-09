@@ -1,0 +1,14 @@
+<template>
+    <article>
+        <div class="slds-grid">
+            <div class="slds-col">
+                <lightning-formatted-rich-text value={thresholdInfo}></lightning-formatted-rich-text>
+            </div>
+            <div class="slds-col">
+                <c-custom-help-text onhidehelptext={handleHideHelpText}
+                                    helptext={geoThresholdIIcon}>
+                </c-custom-help-text>
+            </div>
+        </div>
+    </article>
+</template>

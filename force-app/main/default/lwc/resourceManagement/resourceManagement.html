@@ -1,0 +1,146 @@
+<template>
+    <div class="slds-is-relative">
+        <template lwc:if={isFlow}>
+            <lightning-record-edit-form
+                    object-api-name={currentObject}
+                    record-id={recordId}
+                    onload={handleOnLoad}
+                    onchange={onProjectComplexityChange}>
+                <div if:true={isFormLoaded}>
+                    <h1 class="custom-section slds-m-bottom_medium slds-m-top_medium">Resources - People</h1>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="ftePM">FTE PM</label>
+                        <lightning-input-field field-name={FTEPMField}
+                                               id="ftePM"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <div class="slds-form-element ">
+                            <div class="slds-grid">
+                                <div class="slds-col slds-size_1-of-12">
+                                    <lightning-input-field field-name={isPMDedicatedField}
+                                                           id="isPMDedicated"
+                                                           variant="label-hidden">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_2-of-3">
+                                    <label class="slds-form-element__label no-padding" for="isPMDedicated">Is PM dedicated?</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="ftePackDev">FTE Pack Dev</label>
+                        <lightning-input-field field-name={FTEPackDevField}
+                                               id="ftePackDev"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="fteLiquid">FTE Liquid</label>
+                        <lightning-input-field field-name={FTELiquidField}
+                                               id="fteLiquid"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="fteGraphics">FTE Graphics</label>
+                        <lightning-input-field field-name={FTEGraphicsField}
+                                               id="fteGraphics"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="resourceComments">Resource Comments</label>
+                        <lightning-input-field field-name={resourceCommentField}
+                                               id="resourceComments"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+
+                    <h1 class="custom-section slds-m-bottom_medium">Resources - External Resource Expenses</h1>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="expenses">Expenses</label>
+                        <lightning-input-field field-name={costField}
+                                               id="expenses"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="capex">Capex</label>
+                        <lightning-input-field field-name={capexField}
+                                               id="capex"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+
+                    <h1 class="custom-section slds-m-bottom_medium">Complexity</h1>
+                    <p class="slds-form-element__label slds-m-bottom_medium">Project Complexity: {projectComplexity}</p>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="mngComplexity">Project Management
+                            Complexity</label>
+                        <lightning-input-field field-name={projectManagementComplexityField}
+                                               id="mngComplexity"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="liquid">Technical Feasibility Liquid</label>
+                        <lightning-input-field field-name={technicalFeasibilityLiquidField}
+                                               id="liquid"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="packDev">Technical Feasibility Pack Dev</label>
+                        <lightning-input-field field-name={technicalFeasibilityPackDevField}
+                                               id="packDev"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="complexityComments">Complexity Comments</label>
+                        <lightning-input-field field-name={complexityCommentsField}
+                                               id="complexityComments"
+                                               variant="label-hidden"
+                                               onchange={onComplexityCommentChange}>
+                        </lightning-input-field>
+                    </div>
+
+                    <h1 class="custom-section slds-m-bottom_medium">Risk</h1>
+                    <p class="slds-form-element__label slds-m-bottom_medium">Project Risk: {projectRisk}</p>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="timingRisk">Timing Risk</label>
+                        <lightning-input-field field-name={timingRiskField}
+                                               id="timingRisk"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="technicalRisk">Technical Risk</label>
+                        <lightning-input-field field-name={technicalRiskField}
+                                               id="technicalRisk"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="custom-boxes slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="costRisk">Cost Risk</label>
+                        <lightning-input-field field-name={costRiskField}
+                                               id="costRisk"
+                                               variant="label-hidden">
+                        </lightning-input-field>
+                    </div>
+                    <div class="slds-m-bottom_medium">
+                        <label class="slds-form-element__label" for="riskComments">Risk Comments</label>
+                        <lightning-input-field field-name={riskCommentField}
+                                               id="riskComments"
+                                               variant="label-hidden"
+                                               onchange={onRiskCommentChange}>
+                        </lightning-input-field>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </template>
+    </div>
+</template>

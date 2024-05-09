@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="recordId" type="String" label="Current Project Id" />
+            <property name="isFlow" type="Boolean" label="Is this component coming from Flow?" />
+            <property name="isProjectSnapshot" type="Boolean" label="Is it a Project Snapshot Record?" />
+            <property name="FTEPMValue" type="Integer" label="FTE PM Value" />
+            <property name="isPMDedicatedValue" type="Boolean" label="Is PM Dedicated Value" />
+            <property name="FTEPackDevValue" type="Integer" label="FTE Pack Dev Value" />
+            <property name="FTELiquidValue" type="Integer" label="FTE Liquid Value" />
+            <property name="FTEGraphicsValue" type="Integer" label="FTE Graphics Value" />
+            <property name="resourceCommentValue" type="String" label="Resource Comment" />
+            <property name="costValue" type="Integer" label="Cost Value" />
+            <property name="capexValue" type="Integer" label="Capex Value" />
+            <property name="projectManagementComplexity" type="Integer" label="Project Management Complexity" />
+            <property name="technicalFeasibilityLiquid" type="Integer" label="Technical Feasibility Liquid" />
+            <property name="technicalFeasibilityPackDev" type="Integer" label="Technical Feasibility Pack Dev" />
+            <property name="complexityComment" type="String" label="Complexity Comment" />
+            <property name="timingRisk" type="Integer" label="Timing Risk" />
+            <property name="technicalRisk" type="Integer" label="Technical Risk" />
+            <property name="costRisk" type="Integer" label="Cost Risk" />
+            <property name="riskComment" type="String" label="Risk Comment" />
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

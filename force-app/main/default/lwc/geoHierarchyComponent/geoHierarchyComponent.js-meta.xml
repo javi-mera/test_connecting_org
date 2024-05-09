@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <description>Geo Hierarchy Component</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Geo Hierarchy Component</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="projectId" label="Project Id" type="String" />
+
+            <property name="initialLeadMarket" label="Initial Lead Market" type="String" />
+            <property name="initialLeadRegion" label="Initial Lead Region" type="String" />
+            <property name="initialLeadHub" label="Initial Lead Hub" type="String" />
+            <property name="initialLeadCluster" label="Initial Lead Cluster" type="String" />
+            <property name="initialDistributionChannel" label="Initial Distribution Channel" type="String" />
+            <property name="initialTradeType" label="Initial Trade Type" type="String" />
+            <property name="initialBrandHome" label="Initial Brand Home" type="String" />
+            <property name="initialAdditionalMarkets" label="Initial Additional Markets" type="String" />
+            <property name="initialAdditionalRegions" label="Initial Additional Regions" type="String" />
+            <property name="initialAdditionalHubs" label="Initial Additional Hubs" type="String" />
+            <property name="initialAdditionalClusters" label="Initial Additional Clusters" type="String" />
+
+            <property name="selectedLeadMarket" label="Selected Lead Market" type="String" />
+            <property name="selectedLeadRegion" label="Selected Lead Region" type="String" />
+            <property name="selectedLeadHub" label="Selected Lead Hub" type="String" />
+            <property name="selectedLeadCluster" label="Selected Lead Cluster" type="String" />
+            <property name="selectedDistributionChannel" label="Selected Distribution Channel" type="String" />
+            <property name="selectedTradeType" label="Selected Trade Type" type="String" />
+            <property name="selectedBrandHome" label="Selected Brand Home" type="String" />
+            <property name="selectedAdditionalMarkets" label="Selected Additional Markets" type="String" />
+            <property name="selectedAdditionalRegions" label="Selected Additional Regions" type="String" />
+            <property name="selectedAdditionalHubs" label="Selected Additional Hubs" type="String" />
+            <property name="selectedAdditionalClusters" label="Selected Additional Clusters" type="String" />
+
+            <property name="isAdmin" label="Is Admin?" type="Boolean" />
+            <property name="bmcClassification" label="BMC Classification" type="String" />
+            <property name="marketClassification" label="Market Classification" type="String" />
+            <property name="projectPriorityJustification" label="Project Priority Justification" type="String" />
+            <property name="leadRegionAlignedToProject" label="Lead Region Aligned To Project?" type="Boolean"/>
+            <property name="currentPhase" label="Current Phase" type="String" />
+            <property name="projectClassification" label="Project Classification" type="String" />
+            <property name="projectClassificationSubtype" label="Project Classification Subtype" type="String" />
+            <property name="noChangesNeededForPromotionalPack" label="No Changes Needed For Promotional Pack?" type="Boolean"/>
+            <property name="isSameMarketPromoPack" label="Is Same Market Promo Pack?" type="Boolean"/>
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,35 @@
+<template>
+    <div lwc:if={isFromFlow} class="slds-m-horizontal_xx-small slds-m-vertical_medium">
+        <c-checklist is-from-record-page={isFromRecordPage}
+                     project-classification={projectClassification}
+                     project-classification-subtype={projectClassificationSubtype}
+                     project-complexity={projectComplexity}
+                     project-phase={projectPhase}
+                     is-pack-development-manager-contacted={isPackDevelopmentManagerContacted}
+                     is-approved-by-legal-and-reg-primos={isApprovedByLegalAndRegPrimos}
+                     is-gift-box-exception={isGiftBoxException}
+                     gift-box-exception-comment={giftBoxExceptionComment}
+                     has-p-l-confirmed-checklist={hasPLConfirmedChecklist}
+                     onvalueschange={handleValuesChange}>
+        </c-checklist>
+    </div>
+
+    <template lwc:if={isFromRecordPage}>
+        <lightning-accordion active-section-name="Checklist"
+                             allow-multiple-sections-open>
+            <lightning-accordion-section name="Checklist" label="Checklist">
+                <c-checklist is-from-record-page={isFromRecordPage}
+                             project-classification={projectClassification}
+                             project-classification-subtype={projectClassificationSubtype}
+                             project-complexity={projectComplexity}
+                             project-phase={projectPhase}
+                             is-pack-development-manager-contacted={isPackDevelopmentManagerContacted}
+                             is-approved-by-legal-and-reg-primos={isApprovedByLegalAndRegPrimos}
+                             is-gift-box-exception={isGiftBoxException}
+                             gift-box-exception-comment={giftBoxExceptionComment}
+                             has-p-l-confirmed-checklist={hasPLConfirmedChecklist}>
+                </c-checklist>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </template>
+</template>

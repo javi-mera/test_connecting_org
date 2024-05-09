@@ -1,0 +1,64 @@
+<template>  
+
+    <!--
+        I Used SLDS for this code
+        Here is link https://www.lightningdesignsystem.com/components/modals/
+    --> 
+
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <!-- modal header start -->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                    <lightning-icon icon-name="utility:close"
+                    alternative-text="close"
+                    variant="inverse"
+                    size="small" ></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{label}</h2>
+            </header>
+
+            <!-- modal body start -->
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+                <template if:true={isLoading}>
+                    <lightning-spinner alternative-text="Loading"></lightning-spinner>
+                </template>
+
+                <template if:false={isLoading}>
+                    <template if:true={isProjectLeader}>
+                        <div if:false={isOriginalProject}>
+                        <lightning-datatable
+                        data={list} columns={cols} key-field="id"
+                        selected-rows={preSelectedRows}
+                                max-row-selection="1" sorted-by="title" sorted-direction="asc">
+                        </lightning-datatable> 
+                        </div>
+                        <div if:true={isOriginalProject}>
+                            <lightning-datatable
+                                    data={list} columns={originalProjectCols} key-field="id"
+                                    selected-rows={preSelectedRows}
+                                    max-row-selection="1">
+                            </lightning-datatable>
+                        </div>
+                    </template>
+                    <template if:false={isProjectLeader}>
+                        <lightning-datatable  
+                        data={list} columns={multiselect_cols} key-field="id"
+                        selected-rows={preSelectedRows}>  
+                        </lightning-datatable> 
+                    </template> 
+                </template>
+            </div>
+
+            <!-- modal footer start-->
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>
+                <button class="slds-button slds-button_brand" onclick={handleSave}>Save</button>
+            </footer>
+
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

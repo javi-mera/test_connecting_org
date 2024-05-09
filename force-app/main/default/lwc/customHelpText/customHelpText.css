@@ -1,0 +1,71 @@
+.tooltip-styles {
+    width: max-content;
+    min-width: 13.125rem;
+    background-color: white;
+    border: 1px solid #c2c2c2;
+    z-index: 3;
+}
+
+.tooltip-styles-special {
+    min-width: 29.125rem !important;
+}
+
+.helptext-styles {
+    color: black;
+    padding: 17px 22px;
+}
+
+.relative-position {
+    position: relative;
+}
+
+.stickyPopup, .stickyPopupSpecial {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stickyPopupNameInput {
+    position: absolute;
+    top: -120%;
+    left: 2300%;
+}
+
+.slds-nubbin_left:before, .slds-nubbin_left:after {
+    top: 9% !important;
+}
+
+.close-button-styles {
+    margin: 7px;
+}
+
+.blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    .stickyPopup {
+        left: 500%;
+    }
+
+    .stickyPopupSpecial {
+        left: 335%;
+    }
+
+    .slds-nubbin_bottom:before, .slds-nubbin_bottom:after {
+        left: 25% !important;
+    }
+
+    .stickyPopupNameInput {
+        left: 2500%;
+    }
+
+    .tooltip-styles-special {
+        min-width: 29.125rem !important;
+    }
+}

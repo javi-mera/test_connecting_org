@@ -1,0 +1,12 @@
+<template>
+    <c-lookup 
+        selection={initialSelectionUsers}
+        onsearchusers={handleSearchUser}
+        onsearchallusers={handleSearchAllUser}
+        label="* Project Leader"
+        placeholder="Search"  
+        ongetlookup={handlePublishEvent}
+        infotext="Project Leader's name"
+        special-style="true"
+    ></c-lookup>
+</template>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <description>Timings Table</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Timings Table</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="isFromFlow" label="Is From Flow?" type="Boolean" />
+            <property name="projectPhase" label="Project Phase" type="String" />
+            <property name="projectClassification" label="Project Classification" type="String" />
+            <property name="projectClassificationSubtype" label="Project Classification Subtype" type="String" />
+            <property name="projectStatus" label="Project Status" type="String" />
+            <property name="targetOpportunitySubmissionDate" label="Target Opportunity Submission Date" type="Date" />
+            <property name="targetBCASubmissionDate" label="Target BCA Submission Date" type="Date" />
+            <property name="targetBCVSubmissionDate" label="Target BCV Submission Date" type="Date" />
+            <property name="customerPresentationDate" label="Customer Presentation Date" type="Date" />
+            <property name="targetCommercialSubmissionDate" label="Target Commercial Submission Date" type="Date" />
+            <property name="targetProductionSubmissionDate" label="Target Production Submission Date" type="Date" />
+            <property name="targetShipmentDate" label="Target Shipment Date" type="Date" />
+            <property name="targetOnShelfDate" label="Target On Shelf Date" type="Date" />
+            <property name="targetPLRDate" label="Target PLR Date" type="Date" />
+            <property name="opportunitySubmissionDate" label="Opportunity Submission Date" type="Date" />
+            <property name="BCASubmissionDate" label="BCA Submission Date" type="Date" />
+            <property name="BCAApprovalDate" label="BCA Approval Date" type="Date" />
+            <property name="BCVSubmissionDate" label="BCV Submission Date" type="Date" />
+            <property name="BCVApprovalDate" label="BCV Approval Date" type="Date" />
+            <property name="commercialSubmissionDate" label="Commercial Submission Date" type="Date" />
+            <property name="commercialApprovalDate" label="Commercial Approval Date" type="Date" />
+            <property name="productionSubmissionDate" label="Production Submission Date" type="Date" />
+            <property name="actualOnShelfDate" label="Actual On Shelf Date" type="Date" />
+            <property name="actualShipmentDate" label="Actual Shipment Date" type="Date" />
+            <property name="actualPLRDate" label="Actual PLR Date" type="Date" />
+            <property name="isProjectSubmitted" label="Is Project Submitted?" type="Boolean" />
+            <property name="opportunityRecommendedDate" label="Opportunity Recommended Date" type="Date" />
+            <property name="BCARecommendedDate" label="BCA Recommended Date" type="Date" />
+            <property name="BCVRecommendedDate" label="BCV Recommended Date" type="Date" />
+            <property name="customerMeetingRecommendedDate" label="Customer Meeting Recommended Date" type="Date" />
+            <property name="commercialRecommendedDate" label="Commercial Recommended Date" type="Date" />
+            <property name="productionRecommendedDate" label="Production Recommended Date" type="Date" />
+            <property name="shipmentRecommendedDate" label="Shipment Recommended Date" type="Date" />
+            <property name="shelfRecommendedDate" label="On Shelf Recommended Date" type="Date" />
+            <property name="PLRRecommendedDate" label="PLR Recommended Date" type="Date" />
+            <property name="isPLRRequired" label="Is PLR Required?" type="Boolean" />
+            <property name="isProjectOnOffTrack" label="Is Project On Off Track?" type="String" />
+            <property name="isIPCWithoutArtworkChange" label="Is IPC Without Artwork Change?" type="Boolean" />
+            <property name="isArtworkChange" label="Is Artwork Change?" type="Boolean" />
+            <property name="isNewLiquid" label="Is New Liquid?" type="Boolean" />
+            <property name="isNewPrimaryPack" label="Is New Primary Pack?" type="Boolean" />
+            <property name="isSourcingChange" label="Is Sourcing Change?" type="Boolean" />
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="isFromProjectRecordPage" label="Is From Project Record Page?" type="Boolean" />
+            <property name="isProjectSnapshot" label="Is Project Snapshot?" type="Boolean" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

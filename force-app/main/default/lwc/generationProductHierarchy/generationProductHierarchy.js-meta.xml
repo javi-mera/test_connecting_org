@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Genration Product Hierarchy</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="productHierarchyRecords" type="String[]"/>
+            <property name="initialSelectionCategory" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionBrand" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionSubBrand" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionFlavour" type="apex://LookupSearchResult[]"/>
+            <property name="initialSelectionSize" type="apex://LookupSearchResult[]"/>
+            <property name="showSizesAndFlavours" type="Boolean" />
+            <property name="projectType" type="String" />
+            <property name="ProductHierarchiesValues" type="@salesforce/schema/ProductHierarchy__c[]" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

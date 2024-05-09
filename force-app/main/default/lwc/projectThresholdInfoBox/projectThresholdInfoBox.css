@@ -1,0 +1,29 @@
+.bacardi-card {
+    position: relative;
+    border-width: 1px!important;
+    border-style: solid!important;
+    border-color: rgb(201, 201, 201)!important;
+    border-radius: 0.25rem!important;
+    background-clip: padding-box!important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10)!important;
+    padding-left: 0.75rem!important;
+    padding-right: 0.75rem!important;
+    background-color: rgb(22, 206, 187);
+    color: white!important;
+    opacity: 0.8!important;
+    font-size: 14px!important;
+}
+
+.timings-warning {
+    color: rgb(244, 120, 12)!important;
+    position: relative;
+    border-width: 1px!important;
+    border-style: solid!important;
+    border-color: rgb(201, 201, 201)!important;
+    border-radius: 0.25rem!important;
+    background-clip: padding-box!important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10)!important;
+    padding-left: 0.75rem!important;
+    padding-right: 0.75rem!important;
+    font-size: 14px!important;
+}

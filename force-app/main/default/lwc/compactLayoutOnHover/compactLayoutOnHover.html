@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <template if:true={recordId} >
+            <div>
+                <section class="slds-popover slds-popover_panel" role="dialog">
+                    <lightning-card variant="narrow" title={recordName} icon-name={iconName}>
+                        <div class="slds-p-horizontal_small">
+                            <p class="slds-text-body_medium row-title">Project Number</p>
+                            <p>{recordNumber}</p>
+                            <div if:true={recordDescription}>
+                                <p class="slds-text-body_medium row-title">Project Description</p>
+                                <p>{recordDescription}</p>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </section>
+            </div>
+        </template>
+    </div>
+</template>

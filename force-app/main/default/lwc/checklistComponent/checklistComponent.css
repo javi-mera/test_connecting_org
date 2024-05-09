@@ -1,0 +1,8 @@
+template, label, .text-style {
+    font-size: 13px !important;
+    color: black !important;
+}
+
+:host {
+    --sds-c-accordion-summary-color-background: var(--lwc-colorBackground,rgb(243, 242, 242));
+}

@@ -1,0 +1,19 @@
+<template>
+    <footer class="slds-card__footer actionButtonBar slds-grid slds-grid_align-spread slds-p-horizontal_small" data-aura-rendered-by="2022:0">
+        <div class="actionsLeft slds-grid slds-m-right_xx-small" data-aura-rendered-by="2023:0">
+            <!--render facet: 2024:0-->
+        </div>
+        <!--render facet: 2025:0-->
+        <div class="actionsRight slds-grid" data-aura-rendered-by="2026:0">
+            <button if:false={isPPMUser} type="button" class="slds-button slds-button_neutral flow-button__BACK" data-aura-rendered-by="2002:0" onclick={handleBack}>
+                <!--render facet: 2003:0-->Previous<!--render facet: 2006:0-->
+            </button>
+            <button type="button" class="slds-button slds-button_brand flow-button__NEXT" data-aura-rendered-by="2013:0" onclick={handleClose}><!--render facet: 2014:0-->Save &amp; Close<!--render facet: 2017:0-->
+            </button>
+            <button if:false={isPPMUser} type="button" class="slds-button slds-button_brand flow-button__NEXT" data-aura-rendered-by="2013:0" onclick={handleNext}><!--render facet: 2014:0-->Save &amp; Next<!--render facet: 2017:0-->
+            </button>
+<!--            <button if:true={isPPMUser} type="button" class="slds-button slds-button_brand flow-button__SAVE" data-aura-rendered-by="2013:0" onclick={handlePPMSave}>&lt;!&ndash;render facet: 2014:0&ndash;&gt;Save&lt;!&ndash;render facet: 2017:0&ndash;&gt;-->
+<!--            </button>-->
+        </div>
+    </footer>
+</template>

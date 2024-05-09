@@ -1,0 +1,9 @@
+.help-text {
+    position: absolute;
+    display: initial;
+    z-index: 6;
+}
+
+.margin-top {
+    margin-top: 8px;
+}

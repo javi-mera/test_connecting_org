@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="recordId" label="Record Id" type="String" />
+            <property name="phase" label="Phase" type="String" />
+            <property name="complexity" label="Complexity" type="String" />
+            <property name="justificationForFinancialThresholdNotMet" label="Justification for Financial Threshold Not Met" type="String" />
+            <property name="projectDevelopmentCostsToDate" label="Project Development Costs To Date" type="Integer" />
+            <property name="financialThresholdNotMet" label="Financial Threshold Not Met" type="Boolean" />
+            <property name="isAdmin" label="Is Admin?" type="Boolean" />
+            <property name="leadRegion" label="Lead Region" type="String" />
+            <property name="additionalRegions" label="Additional Regions" type="String" />
+            <property name="geoSubtype" label="Geo Extension Subtype" type="String" />
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="complexity" label="Complexity" type="String" />
+            <property name="isFromProjectRecordPage" label="Is From Project Record Page?" type="Boolean" />
+            <property name="isFromProjectSnapshotRecordPage" label="Is From Project Snapshot Record Page?" type="Boolean" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

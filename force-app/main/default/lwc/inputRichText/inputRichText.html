@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <lightning-formatted-rich-text value={value} label={label} required="true" label-visible=true></lightning-formatted-rich-text>
+    </div>
+    <div if:true={showDecisionRequired}>
+        <strong><lightning-formatted-rich-text value="Decision Required" label-visible=true></lightning-formatted-rich-text></strong>
+        <lightning-formatted-rich-text value={decisionValue}  label={labelDecision}></lightning-formatted-rich-text>
+    </div>
+</template>

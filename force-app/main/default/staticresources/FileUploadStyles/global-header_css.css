@@ -1,0 +1,39 @@
+lightning-primitive-file-droppable-zone.slds-file-selector__dropzone,
+.slds-file-selector__dropzone slot,
+.slds-file-selector .slds-file-selector_files {
+  width: 100%;
+}
+
+.slds-file-selector{
+  width: 100%;
+}
+
+.slds-file-selector__dropzone slot, .slds-file-selector__text .slds-medium-show {
+  padding: 14px;
+}
+
+.slds-file-selector__dropzone slot .slds-file-selector__body {
+    flex-direction: column;
+}
+
+.slds-path__nav .slds-is-complete, .slds-path__nav .slds-is-complete:before, .slds-path__nav .slds-is-complete:after  {
+  /*background: var(--lwc-colorBackgroundPathIncomplete,rgb(243, 243, 243));*/
+  background: rgb(243, 243, 243);
+}
+span.slds-path__stage{
+  display: none;
+}
+.slds-path__nav .slds-is-complete .slds-path__title {
+  color: var(--lwc-colorTextDefault,rgb(24, 24, 24));
+  transform: rotateX(0deg) !important;
+}
+.slds-path__nav .slds-is-complete .slds-path__link {
+  color: var(--lwc-colorTextDefault,rgb(24, 24, 24)) !important;
+}
+.slds-path__nav .slds-is-active:first-child:before, .slds-path__nav .slds-is-active:first-child:after{
+  background-color: none;
+}
+
+.slds-path__scroller {
+  z-index: 1 !important;
+}

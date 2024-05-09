@@ -1,0 +1,36 @@
+<template>
+    <div if:false={isLoading}>
+        <div class="slds-var-p-bottom_small slds-m-top_medium">
+            <strong class="headerStyle">Regions’ NSV Contribution</strong>
+        </div>
+        <div>
+            <p>{helpText}</p>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <div class="slds-border_left slds-border_right slds-border_top slds-border_bottom"
+                 style="border-radius: 0.3rem 0.3rem 0 0;">
+                <lightning-datatable
+                        class="nsvByRegionsDatatable"
+                        key-field="id"
+                        data={data}
+                        columns={columns}
+                        oncellchange={onCellChange}
+                        data-is-from-project-record-page={isFromProjectRecordPage}
+                        data-is-from-project-snapshot-record-page={isFromProjectSnapshotRecordPage}
+                        hide-checkbox-column
+                        suppress-bottom-bar>
+                </lightning-datatable>
+            </div>
+            <div class="slds-var-m-top_medium slds-grid slds-gutters totalStyle slds-m-left_none">
+                <div class="slds-col slds-size_2-of-6">
+                </div>
+                <div class="slds-col slds-size_2-of-12 paddingLeft">
+                    <b>Total:</b>
+                </div>
+                <div class="slds-col slds-size_2-of-12 percentageStyle">
+                    <b class={totalPercentageClass}>{totalPercentage}%</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

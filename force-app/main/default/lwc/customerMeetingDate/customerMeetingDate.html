@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-grid slds-wrap slds-p-bottom_small">
+        <div if:true={showEstimatedCustomerDate} class="slds-col slds-size_1-of-1 slds-p-around_none slds-is-relative">
+            <section aria-label="Dialog title" aria-describedby="popover-body-id" class="bacardi-popover slds-popover slds-nubbin_left-top" role="dialog">
+                <div id="popover-body-id" class="slds-popover__body">
+                    <lightning-datatable
+                        key-field="id"
+                        columns={_customerPresentationColumns}
+                        data={_customerPresentationData}
+                        hide-checkbox-column
+                        suppress-bottom-bar
+                        onrowaction={callRowAction}
+                        column-widths-mode="auto"
+                    >
+                    </lightning-datatable>
+                    <div class="slds-grid slds-p-vertical_xx-small slds-grid_align-center">
+                        <div class="slds-col">
+                            <a href={customerPresentationLink} target="_blank" rel="noopener">
+                                Click Here if you would like to know the customer presentation window for a specific customer.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <label class="slds-form-element__label" for="input">
+                * Estimated 1st customer presentation date
+            </label>
+            <div class="help-text">
+                <c-custom-help-text onhidehelptext={handleHideHelpText} helptext={infotext}></c-custom-help-text>
+            </div>
+            <lightning-input
+                class="slds-p-around_none"
+                type="date"
+                data-name="customer-meeting-date"
+                variant="label-hidden"
+                value={customerMeetingDate}
+                data-key="customerMeetingDate"
+                onchange={onDateValueChange}
+                min={_minimumDate}
+                id="input">
+            </lightning-input>
+        </div>
+    </div>
+</template>

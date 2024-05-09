@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-m-bottom_small">
+        <label class="slds-form-element__label" for="input">
+            <span style="color: red">*</span>{label}
+        </label>
+        <div class="help-text">
+            <c-custom-help-text helptext={infotext}
+                                onhidehelptext={handleHideHelpText}
+                                project-name-input="true">
+            </c-custom-help-text>
+        </div>
+        <lightning-input
+                type="string"
+                variant="label-hidden"
+                required="true"
+                value={projectName}
+                placeholder={placeholder}
+                onchange={onProjectNameChange}
+                id="input">
+        </lightning-input>
+    </div>
+</template>

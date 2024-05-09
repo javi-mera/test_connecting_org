@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Lookup To Project</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Lookup To Project</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="currentProjectId" type="String" />
+            <property name="currentProjectClassification" type="String" />
+            <property name="currentParentProjectId" type="String" />
+            <property name="selectedProject" type="String" />
+            <property name="initialSelectionProjects" type="apex://LookupSearchResult[]"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

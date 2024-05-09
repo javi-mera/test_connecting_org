@@ -1,0 +1,17 @@
+<template>
+    <article class="slds-card bacardi-card slds-var-p-around_small" if:true={isCorrectProjectClassification}>
+        <b>Please note: </b><lightning-formatted-rich-text value={thresholdInfo}></lightning-formatted-rich-text>
+    </article>
+    <article class="slds-card bacardi-card slds-var-p-around_small" if:true={isPromoPackRepeatOrLimitedOrValueAddedPack}>
+        <b>Warning!</b> {vapWarningMessage}
+    </article>
+    <article class="slds-card bacardi-card slds-var-p-around_small" if:true={isTimings}>
+        <lightning-formatted-rich-text value={timingsInfo}></lightning-formatted-rich-text>
+    </article>
+    <article class="slds-card bacardi-card slds-var-p-around_small" if:true={isTimings}>
+        <lightning-formatted-rich-text value={dateFormatInfo}></lightning-formatted-rich-text>
+    </article>
+    <article class="slds-card slds-var-p-around_small timings-warning" if:true={isTimingsWarningNeeded}>
+        <lightning-formatted-rich-text value={timingsWarning}></lightning-formatted-rich-text>
+    </article>
+</template>

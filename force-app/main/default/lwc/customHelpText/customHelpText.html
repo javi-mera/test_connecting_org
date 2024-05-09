@@ -1,0 +1,35 @@
+<template>
+    <div class="slds-form-element__icon relative-position slds-p-top_xxx-small">
+        <button class="slds-button slds-button_icon"
+                aria-describedby="help"
+                onclick={handleOnClick}>
+            <lightning-icon icon-name="utility:info"
+                            size="x-small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">Help</span>
+        </button>
+        <div if:true={showHelpText}>
+            <div class="blocker"
+                 onclick={handleClose}
+            ></div>
+            <div class={styleClasses}>
+                <div class={popupStyles}
+                     role="tooltip"
+                     id="help">
+                    <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-float_right slds-popover__close close-button-styles"
+                            title="Close dialog"
+                            onclick={handleClose}>
+                        <lightning-icon icon-name="utility:close"
+                                        class="slds-icon-utility-close slds-icon_container"
+                                        size="small"
+                        ></lightning-icon>
+                        <span class="slds-assistive-text">Close dialog</span>
+                    </button>
+                    <div class="slds-popover__body slds-text-body_small helptext-styles slds-rich-text-editor__output">
+                        <lightning-formatted-rich-text value={helptext}></lightning-formatted-rich-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

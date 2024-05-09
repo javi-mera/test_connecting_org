@@ -1,0 +1,28 @@
+.totalPercentageStyle {
+    color: red;
+}
+
+.totalPercentageStyleGreen {
+    color: green;
+}
+
+.headerStyle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.totalStyle {
+    font-size: 16px;
+    /*text-align: right;*/
+}
+
+.percentageStyle {
+    font-size: 14px;
+    text-align: right;
+    /*padding-right: 1.875rem;*/
+    padding-right: 2.625rem;
+}
+
+.paddingLeft {
+    padding-left: 3px;
+}

@@ -1,0 +1,11 @@
+.geoHierarchyComponent c-lookup[data-field="Additional Region"] .slds-pill__remove,
+.geoHierarchyComponent c-lookup[data-field="Additional Hub"] .slds-pill__remove,
+.geoHierarchyComponent c-lookup[data-field="Additional Cluster"] .slds-pill__remove {
+    display: none;
+}
+
+.geoHierarchyComponent c-lookup[data-field="Additional Region"] .slds-pill__label,
+.geoHierarchyComponent c-lookup[data-field="Additional Hub"] .slds-pill__label,
+.geoHierarchyComponent c-lookup[data-field="Additional Cluster"] .slds-pill__label {
+    padding-right: 5px
+}

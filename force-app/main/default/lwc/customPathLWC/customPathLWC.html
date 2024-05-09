@@ -1,0 +1,27 @@
+<template>
+  <template if:true={showPath}>
+    <div class={display}>
+      <c-custom-path-phases
+        phase={phase}
+        project-type={projectType}
+        sub-type={subType}
+        is-same-market-promotional-pack={isSameMarketPromotionalPack}
+      ></c-custom-path-phases>
+    </div>
+  </template>
+  <hr />
+  <template if:true={showPath}>
+    <div class={displayStage}>
+      <c-custom-path-stages
+        current={current}
+        project-type={projectType}
+        sub-type={subType}
+        phase={phase}
+        geo-extension-sub-type={geoExtensionSubType}
+        onphaseclicked={onPhaseClicked}
+        is-admin={isAdmin}
+        are-timings-available={areTimingsAvailable}
+      ></c-custom-path-stages>
+    </div>
+  </template>
+</template>

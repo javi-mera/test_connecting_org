@@ -1,0 +1,12 @@
+<template>
+    <c-lookup
+            selection={initialSelectionProjects}
+            onsearchproject={handleSearchProject}
+            onsearchallprojects={handleSearchAllProjects}
+            ongetlookup={handlePublishEvent}
+            label={originalProjectLabel}
+            placeholder="Search"
+            infotext={originalProjectHelpText}
+            is-original-project="true"
+    ></c-lookup>
+</template>

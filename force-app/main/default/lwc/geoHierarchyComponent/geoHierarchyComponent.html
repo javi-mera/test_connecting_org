@@ -1,0 +1,206 @@
+<template>
+    <div class="geoHierarchyComponent">
+        <c-lookup selection={initialLeadMarket}
+                  onsearchleadmarket={handleSearchLeadMarket}
+                  onsearchallleadmarkets={handleSearchAllMarkets}
+                  ongetlookup={handlePublishEvent}
+                  onselectionchange={handleLeadMarketChange}
+                  onremoveleadmarket={handleLeadMarketRemoval}
+                  data-field={label.constants.LEAD_MARKET_LABEL}
+                  label={label.constants.LEAD_MARKET_LABEL}
+                  placeholder="Search"
+                  required="true"
+                  infotext={label.constants.LEAD_MARKET_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup
+                selection={initialLeadRegion}
+                ongetlookup={handlePublishEvent}
+                is-disabled={isLeadGeoDisabled}
+                is-cancel-button-disabled="true"
+                label={label.constants.LEAD_REGION_LABEL}
+                required="true"
+                infotext={label.constants.LEAD_REGION_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup
+                selection={initialLeadHub}
+                ongetlookup={handlePublishEvent}
+                is-disabled={isLeadGeoDisabled}
+                is-cancel-button-disabled="true"
+                label={label.constants.LEAD_HUB_LABEL}
+                required="true"
+                infotext={label.constants.LEAD_HUB_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup
+                selection={initialLeadCluster}
+                ongetlookup={handlePublishEvent}
+                is-disabled={isLeadGeoDisabled}
+                is-cancel-button-disabled="true"
+                label={label.constants.LEAD_CLUSTER_LABEL}
+                required="true"
+                infotext={label.constants.LEAD_CLUSTER_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup
+                selection={initialDistributionChannel}
+                onsearchdistributionchannel={handleSearchDistributionChannel}
+                onsearchalldistributionchannels={handleSearchAllDistributionChannel}
+                onselectionchange={handleDistributionChannelChange}
+                ongetlookup={handlePublishEvent}
+                label={label.constants.DISTRIBUTION_CHANNELS_LABEL}
+                placeholder="Search"
+                required="true"
+                infotext={label.constants.DISTRIBUTION_CHANNEL_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup
+                selection={initialTradeType}
+                onsearchtradetype={handleSearchTradeType}
+                onsearchalltradetype={handleSearchAllTradeTypes}
+                ongetlookup={handlePublishEvent}
+                onselectionchange={handleTradeTypeChange}
+                onremovetradetype={handleTradeTypeChange}
+                label={label.constants.TRADE_TYPE_LABEL}
+                data-field={label.constants.TRADE_TYPE_SINGULAR_LABEL}
+                placeholder="Search"
+                required="true"
+                infotext={label.constants.TRADE_TYPE_HELP_TEXT_LABEL}
+        ></c-lookup>
+
+        <c-lookup
+                if:true={isBrandHome}
+                selection={initialBrandHome}
+                onsearchbrandhome={handleSearchBrandHome}
+                onsearchallbrandhome={handleSearchAllBrandHomes}
+                onselectionchange={handleBrandHomeChange}
+                onremovebrandhome={handleBrandHomeChange}
+                ongetlookup={handlePublishEvent}
+                label={label.constants.BRAND_HOME_LABEL}
+                data-field={label.constants.BRAND_HOME_LABEL}
+                placeholder="Search"
+                infotext={label.constants.BRAND_HOME_HELP_TEXT}
+                special-style="true"
+        ></c-lookup>
+        <div style="display: block;" if:true={isAdmin}>
+            <lightning-combobox
+                    name="BMC Classification"
+                    label="BMC Classification"
+                    value={bmcClassification}
+                    options={_bmcOptions}
+                    onchange={handleClassificationChange}
+                    data-field="bmcClassification"
+                    disabled={disableBMC}
+            ></lightning-combobox>
+            <lightning-combobox
+                    name="Market Classification"
+                    label="Market Classification"
+                    value={marketClassification}
+                    options={_marketOptions}
+                    onchange={handleClassificationChange}
+                    data-field="marketClassification"
+                    disabled={disableBMC}
+            ></lightning-combobox>
+        </div>
+        <div style="display: block;" if:false={isAdmin}>
+            <p class="slds-p-vertical_x-small">BMC Classification: {bmcClassification}</p>
+            <p class="slds-p-vertical_x-small">Market Classification: {marketClassificationFormula}</p>
+        </div>
+        <div style="display: block;" if:true={showProjectPriorityJustification}>
+            <lightning-textarea
+                    value={projectPriorityJustification}
+                    onchange={handleProjectPriorityJustificationChange}
+                    label={label.constants.BMC_COMMENT_LABEL}
+            >
+            </lightning-textarea>
+        </div>
+
+        <template if:true={disableLeadRegionAlignedToProject}>
+            <div style="display: block;">
+                <lightning-input
+                        class="slds-p-vertical_small"
+                        type="checkbox"
+                        checked={leadRegionAlignedToProject}
+                        value={leadRegionAlignedToProject}
+                        onchange={handleLeadRegionAlignedToProjectValueChange}
+                        style="display: inline-block; width: 24px;"
+                ></lightning-input>
+                <span style="font-size: 12px;">*Lead region aligned to project?</span>
+                <div class="help-text margin-top">
+                    <c-custom-help-text
+                            onhidehelptext={handlePublishEvent}
+                            helptext={label.constants.LEAD_REGION_ALIGNED_HELP_TEXT_LABEL}
+                    ></c-custom-help-text>
+                </div>
+            </div>
+        </template>
+
+        <template if:true={showPromotionalPackBlock}>
+            <div class="slds-grid slds-p-top_small">
+                <div class="slds-col slds-p-right_x-small slds-p-left_none">
+                    <lightning-input
+                            class="slds-p-top_xxx-small"
+                            type="checkbox"
+                            checked={noChangesNeededForPromotionalPack}
+                            value={noChangesNeededForPromotionalPack}
+                            onchange={handleNoChangesNeededForPromotionalPackChange}
+                            style="display: inline-block; width: 24px;"
+                    ></lightning-input>
+                </div>
+                <div class="slds-col slds-p-horizontal_none">
+                    <span style="font-size: 12px;">{label.constants.NO_CHANGES_NEEDED_FOR_PROMOTIONAL_PACK_LABEL}</span>
+                </div>
+                <div class="slds-col">
+                    <div class="help-text">
+                        <c-custom-help-text
+                                onhidehelptext={handlePublishEvent}
+                                helptext={label.constants.NO_CHANGES_NEEDED_FOR_PROMOTIONAL_PACK_HELP_TEXT_LABEL}
+                        ></c-custom-help-text>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <br/>
+        <br/>
+        <span>
+            Please indicate below, in addition to the Lead Hub/Cluster/Market indicated above, any additional Hubs, Clusters and Markets that will launch this product in this Fiscal Year.
+        </span>
+        <br/>
+        <br/>
+
+        <c-lookup selection={initialAdditionalMarkets}
+                  onsearchadditionalmarkets={handleSearchAdditionalMarket}
+                  onsearchalladditionalmarkets={handleSearchAllAdditionalMarkets}
+                  ongetlookup={handlePublishEvent}
+                  onselectionchange={handleAdditionalMarketChange}
+                  onremoveadditionalmarkets={handleAdditionalMarketRemoval}
+                  label={label.constants.ADDITIONAL_MARKET_LABEL}
+                  data-field={label.constants.ADDITIONAL_MARKET_SINGULAR_LABEL}
+                  placeholder="Search"
+                  infotext={label.constants.ADDITIONAL_MARKET_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup selection={initialAdditionalRegions}
+                  ongetlookup={handlePublishEvent}
+                  is-disabled={isAdditionalGeoDisabled}
+                  is-cancel-button-disabled="true"
+                  is-input-disabled={isInputDisabled}
+                  data-field={label.constants.ADDITIONAL_REGION_SINGULAR_LABEL}
+                  label={label.constants.ADDITIONAL_REGION_LABEL}
+                  infotext={label.constants.ADDITIONAL_REGION_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup selection={initialAdditionalHubs}
+                  ongetlookup={handlePublishEvent}
+                  is-disabled={isAdditionalGeoDisabled}
+                  is-cancel-button-disabled="true"
+                  is-input-disabled={isInputDisabled}
+                  data-field={label.constants.ADDITIONAL_HUB_SINGULAR_LABEL}
+                  label={label.constants.ADDITIONAL_HUB_LABEL}
+                  infotext={label.constants.ADDITIONAL_HUB_HELP_TEXT_LABEL}
+        ></c-lookup>
+        <c-lookup selection={initialAdditionalClusters}
+                  ongetlookup={handlePublishEvent}
+                  is-disabled={isAdditionalGeoDisabled}
+                  is-cancel-button-disabled="true"
+                  is-input-disabled={isInputDisabled}
+                  data-field={label.constants.ADDITIONAL_CLUSTER_SINGULAR_LABEL}
+                  label={label.constants.ADDITIONAL_CLUSTER_LABEL}
+                  infotext={label.constants.ADDITIONAL_CLUSTER_HELP_TEXT_LABEL}
+        ></c-lookup>
+    </div>
+</template>

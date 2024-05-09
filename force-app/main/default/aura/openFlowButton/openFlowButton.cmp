@@ -1,0 +1,11 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute type="Boolean" name="display"/>
+    <div class="slds-box slds-theme_default flowWrapperStyle" aura:id="flowWrapper">
+      <aura:if isTrue="{!v.display}">
+        <lightning:flow aura:id="flowData" />
+      </aura:if>
+    </div>
+    <lightning:messageChannel type="messageChannel__c"
+            onMessage="{!c.handleCapture}"/>
+</aura:component>

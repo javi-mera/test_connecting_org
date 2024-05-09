@@ -1,0 +1,26 @@
+.custom-boxes {
+    width: 50%;
+}
+
+.custom-section {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+:host {
+    --sds-c-accordion-summary-color-background: var(--lwc-colorBackground, rgb(243, 242, 242));
+}
+
+.custom-line {
+    background-color: #cecece;
+    height: 0.5px;
+    width: 97%;
+}
+
+lightning-output-field {
+    overflow: hidden;
+}
+
+.no-padding {
+    padding: 0 !important;
+}

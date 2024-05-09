@@ -1,0 +1,58 @@
+/*enlarge header*/
+/*.nsvByRegionsDatatable .slds-table .slds-th__action .slds-truncate{*/
+/*    max-width: 100%;*/
+/*    overflow: hidden;*/
+/*    text-overflow: unset;*/
+/*    white-space: pre-line;*/
+/*}*/
+
+/*.nsvByRegionsDatatable .slds-table .slds-th__action {*/
+/*    height: 1rem;*/
+/*}*/
+
+/*.nsvByRegionsDatatable tr th:nth-child(3) .slds-cell-fixed {*/
+/*    padding-top: 10px !important;*/
+/*}*/
+
+/*.nsvByRegionsDatatable tr th:nth-child(2) .slds-cell-fixed,*/
+/*.nsvByRegionsDatatable tr th:nth-child(4) .slds-cell-fixed {*/
+/*    padding-top: 3px !important;*/
+/*}*/
+
+.nsvByRegionsDatatable tr th .slds-resizable__divider {
+    display: none !important;
+}
+
+/*hide the 1st column*/
+.nsvByRegionsDatatable tr td:first-child,
+.nsvByRegionsDatatable tr th:first-child {
+    display:none;
+}
+
+.nsvByRegionsDatatable .percentage lightning-base-formatted-text:after {
+    content: '%';
+}
+
+.nsvByRegionsDatatable .totalPercentage {
+    font-weight: bold !important;
+    text-align: right !important;
+}
+
+.nsvByRegionsDatatable .margin-right {
+    margin-right: 5rem !important;
+}
+
+.nsvByRegionsDatatable .slds-scrollable_y, .slds-scrollable--y {
+    overflow-x: hidden !important;
+}
+
+.nsvByRegionsDatatable[data-is-from-project-record-page="true"] tr td:not([aria-readonly]) button,
+.nsvByRegionsDatatable[data-is-from-project-snapshot-record-page="true"] tr td:not([aria-readonly]) button{
+    display:none !important;
+}
+
+.nsvByRegionsDatatable[data-is-from-project-record-page="true"] .percentage lightning-base-formatted-text,
+.nsvByRegionsDatatable[data-is-from-project-snapshot-record-page="true"] .percentage lightning-base-formatted-text {
+    padding-right: 1.813rem !important;
+}
+

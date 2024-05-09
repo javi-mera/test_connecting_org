@@ -1,0 +1,19 @@
+<template>
+    <div class={outsideClasses}>
+        <div if:true={readOnly}>
+            <div class="slds-p-bottom_small">
+                <strong class="slds-text-heading_medium">Benchmark Information</strong>
+            </div>
+        </div>
+        <lightning-layout>
+            <lightning-layout-item size="6">
+                <lightning-input disabled={readOnly} type="number" name="trademarkCurrentGP" value={trademarkCurrentGP} data-field="trademarkCurrentGP" onchange={onChangeHandler} placeholder="$XXX" label="*Trademark's Current $GP per 9L case in lead region" variant="label-inline" ></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item size="6">                
+                <lightning-input disabled={readOnly} type="number" min="0" max="99.9" step="0.1" formatter="percent-fixed" name="trademarkCurrentGM" value={trademarkCurrentGM} data-field="trademarkCurrentGM" onchange={onChangeHandler} placeholder="XX%" label="*Trademark's Current GM% in lead region" variant="label-inline" ></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

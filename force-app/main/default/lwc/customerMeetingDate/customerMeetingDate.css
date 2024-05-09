@@ -1,0 +1,13 @@
+.bacardi-popover {
+    position: absolute!important;
+    right: -725px;
+    top: 20%;
+    width: 700px;
+    z-index: 10;
+}
+
+.help-text {
+    position: absolute;
+    display: initial;
+    z-index: 6;
+}

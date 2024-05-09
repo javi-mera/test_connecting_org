@@ -1,0 +1,6 @@
+.readonlyPath{
+    pointer-events: none;
+}
+.displayNone{
+    display: none;
+}

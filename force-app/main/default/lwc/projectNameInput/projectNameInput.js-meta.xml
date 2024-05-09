@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Project Name Input</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Project Name Input</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="projectName" label="Project Name" type="String"/>
+            <property name="selectedProjectName" label="Selected Project Name" type="String"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="current" type="String" label="Current Phase" />
+            <property name="projectType" type="String" label="Project Type" />
+            <property name="subType" type="String" label="Sub Type" />
+            <property
+        name="geoExtensionSubType"
+        type="String"
+        label="Geographical Extension Sub Type"
+      />
+            <property name="phase" type="String" label="Phase" />
+            <property name="isAdmin" type="Boolean" label="Is Admin?" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

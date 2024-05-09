@@ -1,0 +1,11 @@
+<template>
+    
+    <lightning-progress-indicator current-step={phase} type="path" >
+        <lightning-progress-step label="Discover" value="1" data-id="1" if:true={isDiscoverVisible}></lightning-progress-step>
+        <lightning-progress-step label="Define" value="2" data-id="2" if:true={isDefineVisible}></lightning-progress-step>
+        <lightning-progress-step label="Design" value="3" data-id="3" if:true={isDesignVisible}></lightning-progress-step>
+        <lightning-progress-step label="Develop" value="4" data-id="4" if:true={isDevelopVisible}></lightning-progress-step>
+        <lightning-progress-step label="Deploy" value="5" data-id="5" if:true={isDeployVisible}></lightning-progress-step>
+        <lightning-progress-step label="Diagnose" value="6" data-id="6" if:true={isDiagnoseVisible}></lightning-progress-step>
+    </lightning-progress-indicator>
+</template>

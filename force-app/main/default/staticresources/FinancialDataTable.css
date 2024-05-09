@@ -1,0 +1,65 @@
+tr:nth-child(4) th[data-col-key-value^="fieldLabel"] {
+    border: unset!important;
+}
+
+tr:nth-child(5) th[data-col-key-value^="fieldLabel"] {
+    border: unset!important;
+}
+
+.toastMessage.forceActionsText{
+    white-space: pre-line !important;
+}
+
+.financialsDatatable[data-is-read-only="false"] tr td:first-child{
+    display:none;
+}
+
+.financialsDatatable[data-is-read-only="false"] tr th:first-child{
+    display:none;
+}
+
+.percentage lightning-formatted-number:after {
+    content: '%';
+    right: -4px;
+}
+
+.financialsDatatable[data-is-read-only="false"][data-is-promotional-pack="true"] tr:nth-child(7) td:not([aria-readonly]) button,
+.financialsDatatable[data-is-read-only="false"][data-is-promotional-pack="true"] tr:nth-child(12) td:not([aria-readonly]) button {
+    display: none;
+}
+
+.financialsDatatable[data-is-read-only="false"][data-is-promotional-pack="true"] tr:nth-child(7) td:not([aria-readonly]) .slds-truncate,
+.financialsDatatable[data-is-read-only="false"][data-is-promotional-pack="true"] tr:nth-child(12) td:not([aria-readonly]) .slds-truncate {
+    padding-right: 1.7rem;
+}
+
+.financialsDatatable .slds-table .slds-th__action .slds-truncate{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: pre-line;
+}
+
+.financialsDatatable .slds-table .slds-th__action {
+    height: 2.3rem;
+}
+
+.financialsDatatable .slds-table .slds-line-height_reset {
+    height: 0.2rem;
+}
+
+.financialsDatatable .slds-table_header-fixed_container > .slds-scrollable_y::before {
+    width: 0 !important;
+}
+
+/*hiding the pencil button*/
+.deliverablesTable tr:nth-child(3) td:not([aria-readonly]) button,
+.deliverablesTable tr:nth-child(4) td:not([aria-readonly]) button {
+    display:none !important;
+}
+
+/*adding padding instead of the pencil button*/
+.deliverablesTable tr:nth-child(3) td:not([aria-readonly]) lightning-formatted-number,
+.deliverablesTable tr:nth-child(4) td:not([aria-readonly]) lightning-formatted-number {
+    padding-right: 1.7rem;
+}

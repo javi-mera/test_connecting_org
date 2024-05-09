@@ -1,0 +1,79 @@
+<template>
+    <div class="slds-text-align_right slds-p-bottom_small">
+        <lightning-button
+            variant="brand"
+            label="Mass reassign" 
+            onclick={openModal}
+        ></lightning-button>
+    </div>
+    <template if:true={modalOpen}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="width: 75%; max-width: unset; min-width: unset; position: relative;">
+                <lightning-icon
+                    icon-name="utility:close"
+                    size="small"
+                    alternative-text="Indicates close"
+                    class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                    onclick={closeModal}
+                >
+                </lightning-icon>
+                <div class="slds-modal__header">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Mass reassign</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="overflow: initial; position: relative;">
+                    <lightning-layout class="slds-p-bottom_small">
+                        <lightning-layout-item size="4">
+                            <c-lookup 
+                                onsearchusers={handleSearchApprovers}
+                                onsearchallusers={handleSearchAllApprovers}
+                                onselectionchange={handleSelectionChange}
+                                    onremoveusers={handleRemoveUser}
+                                label="Pending Approver"
+                                placeholder="Search"  
+                                special-style="true"
+                                required="true"
+                            ></c-lookup>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="4">
+
+                        </lightning-layout-item>
+                        <lightning-layout-item size="4">
+                            <c-lookup-to-delegate data-mass-delegate></c-lookup-to-delegate>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout if:true={hasApprovals}>
+                        <lightning-layout-item size="12" style="max-height: 350px; position: relative;">
+                            <lightning-datatable
+                                if:false={_loading}
+                                columns={_columns}
+                                data={_data}
+                                show-row-number-column
+                                key-field="id"
+                                onrowselection={onRowSelectionHandle}
+                            >
+                            </lightning-datatable>
+                            <div if:true={_loading} class="slds-spinner_container">
+                                <div role="status" class="slds-spinner slds-spinner_medium">
+                                    <span class="slds-assistive-text">Loading</span>
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <div if:true={_saving} class="slds-spinner_container">
+                        <div role="status" class="slds-spinner slds-spinner_medium">
+                            <span class="slds-assistive-text">Loading</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <lightning-button variant="brand" label="Reassign" disabled={disableReassign} onclick={handleReassign}></lightning-button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>
